@@ -1,26 +1,127 @@
 ---
-import { catalog } from '../lib/catalog';
+import { url } from '../lib/paths';
+import { LANG_NAME, REPO_URL, ROUTES, UI } from '../lib/i18n';
+import { LANGS, type Lang } from '../schemas/catalog';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = UI[lang];
 ---
 
-<footer class="site-footer wrap">
-  <p>
-    {catalog.resources.length} recursos revisados à mão. Nenhum link é patrocinado ou de afiliado, e
-    o site não usa rastreamento nem cookies.
-  </p>
-  <p>Os preços e planos mudam: confira no próprio site antes de assinar qualquer coisa.</p>
+<footer class="site-footer">
+  <div class="wrap grid">
+    <div class="about">
+      <a class="brand" href={url(ROUTES.home[lang])}>
+        english<span>map</span>
+      </a>
+      <p>{t.footerAbout}</p>
+    </div>
+    <nav aria-label={t.footerSite}>
+      <h2>{t.footerSite}</h2>
+      <ul>
+        <li>
+          <a href={url(ROUTES.home[lang])}>{t.navResources}</a>
+        </li>
+        <li>
+          <a href={url(ROUTES.guide[lang])}>{t.navGuide}</a>
+        </li>
+        {LANGS.filter((l) => l !== lang).map((l) => (
+          <li>
+            <a href={url(ROUTES.home[l])} hreflang={l} lang={l}>
+              {LANG_NAME[l]}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+    <nav aria-label={t.footerProject}>
+      <h2>{t.footerProject}</h2>
+      <ul>
+        <li>
+          <a href={REPO_URL}>{t.footerCode}</a>
+        </li>
+        <li>
+          <a href={`${REPO_URL}/issues/new`}>{t.footerSuggest}</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="note">
+      <p>{t.footerNote}</p>
+    </div>
+  </div>
 </footer>
 
 <style>
   .site-footer {
+    margin-top: var(--space-8);
+    border-top: 1px solid var(--rule);
+    font-size: var(--type-data);
+    color: var(--ink-2);
+  }
+
+  .grid {
+    display: grid;
+    gap: var(--space-6);
+    padding-block: var(--space-7) var(--space-6);
+  }
+
+  .brand {
+    font-family: var(--font-entry);
+    font-weight: var(--weight-entry);
+    font-size: var(--type-h3);
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .brand span {
+    color: var(--pen);
+  }
+
+  .about p {
+    margin-top: var(--space-2);
+    max-width: 32ch;
+  }
+
+  h2 {
+    margin-bottom: var(--space-3);
+    font-size: var(--type-data);
+    font-weight: var(--weight-strong);
+    color: var(--ink);
+  }
+
+  ul {
     display: grid;
     gap: var(--space-2);
-    margin-top: var(--space-8);
-    padding-block: var(--space-6);
-    border-top: 1px solid var(--rule);
-    color: var(--ink-2);
-    font-size: var(--type-data);
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
-  p {
+
+  ul a {
+    text-decoration: none;
+  }
+
+  ul a:hover {
+    text-decoration: underline;
+  }
+
+  .note {
+    grid-column: 1 / -1;
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--rule);
+    font-size: var(--type-label);
+  }
+
+  .note p {
     max-width: var(--measure);
+  }
+
+  @media (min-width: 48rem) {
+    .grid {
+      grid-template-columns: 2fr 1fr 1fr;
+    }
   }
 </style>

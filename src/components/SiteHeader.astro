@@ -1,28 +1,48 @@
 ---
 import { url } from '../lib/paths';
-const path = Astro.url.pathname;
-const links = [
-  { href: url('/'), label: 'Recursos' },
-  { href: url('/como-montar/'), label: 'Como montar a imersão' },
+import { LANG_NAME, ROUTES, UI, type RouteKey } from '../lib/i18n';
+import { LANGS, type Lang } from '../schemas/catalog';
+
+interface Props {
+  lang: Lang;
+  route?: RouteKey | undefined;
+}
+
+const { lang, route } = Astro.props;
+const t = UI[lang];
+const links: { key: RouteKey; label: string }[] = [
+  { key: 'home', label: t.navResources },
+  { key: 'guide', label: t.navGuide },
 ];
+// On a page without translations, the switcher points to the other language's home.
+const other = LANGS.filter((l) => l !== lang);
 ---
 
 <header class="site-header wrap">
-  <a class="brand" href={url('/')}>
+  <a class="brand" href={url(ROUTES.home[lang])}>
     english<span>map</span>
   </a>
-  <nav aria-label="Principal">
+  <nav aria-label={t.navLabel}>
     <ul>
       {links.map((l) => (
         <li>
-          <a href={l.href} aria-current={path === l.href ? 'page' : undefined}>
+          <a href={url(ROUTES[l.key][lang])} aria-current={route === l.key ? 'page' : undefined}>
             {l.label}
           </a>
         </li>
       ))}
     </ul>
   </nav>
-  <button class="theme" type="button" aria-label="Alternar tema claro e escuro">
+  <ul class="langs" aria-label={t.langSwitch}>
+    {other.map((l) => (
+      <li>
+        <a href={url(ROUTES[route ?? 'home'][l])} hreflang={l} lang={l} data-lang-link={l}>
+          {LANG_NAME[l]}
+        </a>
+      </li>
+    ))}
+  </ul>
+  <button class="theme" type="button" aria-label={t.theme}>
     <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true">
       <circle
         cx="10"
@@ -51,6 +71,13 @@ const links = [
       /* private mode: the choice lasts until the tab closes */
     }
   });
+
+  // Keep the active filters when switching language.
+  for (const a of document.querySelectorAll<HTMLAnchorElement>('[data-lang-link]')) {
+    a.addEventListener('click', () => {
+      if (location.search) a.href = a.pathname + location.search;
+    });
+  }
 </script>
 
 <style>
@@ -88,9 +115,15 @@ const links = [
     font-size: var(--type-data);
   }
 
-  nav a {
+  nav a,
+  .langs a {
     text-decoration: none;
     color: var(--ink-2);
+  }
+
+  nav a:hover,
+  .langs a:hover {
+    color: var(--ink);
   }
 
   nav a[aria-current='page'] {
@@ -98,6 +131,11 @@ const links = [
     text-decoration: underline;
     text-decoration-color: var(--pen);
     text-decoration-thickness: 2px;
+  }
+
+  .langs {
+    padding-inline-start: var(--space-5);
+    border-inline-start: 1px solid var(--rule);
   }
 
   .theme {
@@ -121,18 +159,20 @@ const links = [
     border-color: var(--rule-strong);
   }
 
-  @media (max-width: 34rem) {
+  @media (max-width: 40rem) {
     .site-header {
       flex-wrap: wrap;
       row-gap: var(--space-2);
+    }
+    .langs {
+      margin-inline-start: auto;
+      padding: 0;
+      border: 0;
     }
     nav {
       order: 3;
       flex-basis: 100%;
       margin: 0;
-    }
-    .theme {
-      margin-inline-start: auto;
     }
   }
 </style>

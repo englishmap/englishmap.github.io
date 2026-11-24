@@ -11,7 +11,7 @@
 
 englishmap is a directory of resources for learning English online the way you would by living abroad: what to listen to, watch, read, speak and write in English every day, sorted by CEFR level (A1 to C2) and cost. It is inspired by [NewsMapp](https://github.com/newsmapp/newsmapp.github.io).
 
-The site itself is written in Brazilian Portuguese, for Portuguese speakers learning English. It is free and non-commercial, with no ads, affiliate links or tracking.
+The site is available in Brazilian Portuguese (`/`) and English (`/en/`). It is free and non-commercial, with no ads, affiliate links or tracking.
 
 ## Features
 
@@ -41,14 +41,14 @@ pnpm build        # outputs dist/
 ```
 data/catalog.json   Catalog: categories and resources
 src/schemas/        Catalog schema
-src/lib/            Pure logic: catalog, filters, labels, paths
+src/lib/            Pure logic: catalog, filters, i18n strings and routes, paths
 src/components/     UI components
-src/pages/          Routes: / (resources), /como-montar/ (guide), 404
+src/pages/          Routes: / and /en/ (resources), /como-montar/ and /en/guide/ (guide), 404
 docs/               Design brief, decisions (ADRs) and brand files
 ```
 
 ## Adding a resource
 
-Add an object to `data/catalog.json` with `id`, `name`, `url` (https), `category`, `format`, `summary` (up to 200 characters, in Portuguese), `from` and `to` (CEFR levels) and `cost` (`free`, `freemium` or `paid`), then run `pnpm check`.
+Add an object to `data/catalog.json` with `id`, `name`, `url` (https), `category`, `format` (one of the keys in `src/schemas/catalog.ts`), `summary` with `pt` and `en` texts (up to 200 characters each), `from` and `to` (CEFR levels) and `cost` (`free`, `freemium` or `paid`), then run `pnpm check`.
 
 A resource is listed when it is useful to someone studying alone at home, is online, and has its level and cost checked on its own site. No sponsored entries.

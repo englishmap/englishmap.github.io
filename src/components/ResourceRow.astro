@@ -1,13 +1,16 @@
 ---
-import type { Resource } from '../schemas/catalog';
-import { COST_SHORT, COST_LABEL } from '../lib/labels';
+import type { Lang, Resource } from '../schemas/catalog';
+import { COST_LABEL, COST_TITLE, FORMAT_LABEL, UI } from '../lib/i18n';
 import LevelStrip from './LevelStrip.astro';
 
 interface Props {
   resource: Resource;
+  lang: Lang;
 }
 
-const { resource: r } = Astro.props;
+const { resource: r, lang } = Astro.props;
+const t = UI[lang];
+const summary = r.summary[lang];
 ---
 
 <li
@@ -16,29 +19,29 @@ const { resource: r } = Astro.props;
   data-to={r.to}
   data-cost={r.cost}
   data-name={r.name}
-  data-summary={r.summary}
+  data-summary={summary}
 >
   <div class="what">
     <a class="name" href={r.url} rel="noopener">
       {r.name}
     </a>
-    <p class="summary">{r.summary}</p>
+    <p class="summary">{summary}</p>
   </div>
   <dl class="facts">
     <div>
-      <dt class="sr-only">Formato</dt>
-      <dd class="format">{r.format}</dd>
+      <dt class="sr-only">{t.format}</dt>
+      <dd class="format">{FORMAT_LABEL[lang][r.format]}</dd>
     </div>
     <div>
-      <dt class="sr-only">Nível</dt>
+      <dt class="sr-only">{t.level}</dt>
       <dd>
-        <LevelStrip from={r.from} to={r.to} />
+        <LevelStrip from={r.from} to={r.to} lang={lang} />
       </dd>
     </div>
     <div>
-      <dt class="sr-only">Custo</dt>
-      <dd class:list={['cost', r.cost]} title={COST_LABEL[r.cost]}>
-        {COST_SHORT[r.cost]}
+      <dt class="sr-only">{t.cost}</dt>
+      <dd class:list={['cost', r.cost]} title={COST_TITLE[lang][r.cost]}>
+        {COST_LABEL[lang][r.cost]}
       </dd>
     </div>
   </dl>

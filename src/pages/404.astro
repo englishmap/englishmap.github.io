@@ -1,13 +1,22 @@
 ---
-import { url } from '../lib/paths';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { url } from '../lib/paths';
+import { ROUTES } from '../lib/i18n';
 ---
 
-<BaseLayout title="Página não encontrada | englishmap" description="Esta página não existe.">
+<BaseLayout
+  title="Página não encontrada | englishmap"
+  description="Esta página não existe."
+  lang="pt"
+>
   <div class="wrap missing">
     <h1>Página não encontrada</h1>
     <p>
-      O endereço pode ter mudado. <a href={url('/')}>Volte para a lista de recursos</a>.
+      O endereço pode ter mudado. <a href={url(ROUTES.home.pt)}>Volte para a lista de recursos</a>.
+    </p>
+    <p lang="en">
+      Page not found. The address may have changed.{' '}
+      <a href={url(ROUTES.home.en)}>Go to the resource list</a>.
     </p>
   </div>
 </BaseLayout>

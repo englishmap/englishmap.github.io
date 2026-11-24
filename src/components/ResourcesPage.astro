@@ -1,0 +1,266 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CategoryEntry from './CategoryEntry.astro';
+import FilterBar from './FilterBar.astro';
+import { catalog, resourcesIn } from '../lib/catalog';
+import { ROUTES, UI } from '../lib/i18n';
+import { url } from '../lib/paths';
+import type { Lang } from '../schemas/catalog';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = UI[lang];
+const entries = catalog.categories.map((c) => ({
+  category: c,
+  resources: resourcesIn(catalog, c.id),
+}));
+const total = catalog.resources.length;
+const counts = { one: t.count(1), many: t.count(2).replace('2', '{n}'), zero: t.count(0) };
+---
+
+<BaseLayout title={t.homeTitle} description={t.homeDescription(total)} lang={lang} route="home">
+  <div class="wrap">
+    <div class="intro">
+      <h1>{t.h1}</h1>
+      <p>
+        {t.intro(total)} <a href={url(ROUTES.guide[lang])}>{t.introLink}</a>.
+      </p>
+    </div>
+
+    <FilterBar total={total} lang={lang} />
+
+    <div class="layout" data-counts={JSON.stringify(counts)}>
+      <nav class="thumb-index" aria-label={t.categories}>
+        <ol>
+          {entries.map(({ category: c, resources }) => (
+            <li data-index={c.id}>
+              <a href={`#${c.id}`}>
+                <span class="hw" lang="en">
+                  {c.headword}
+                </span>
+                <span class="n" data-index-count>
+                  {resources.length}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ol>
+      </nav>
+
+      <div class="entries">
+        {entries.map((e) => (
+          <CategoryEntry {...e} lang={lang} />
+        ))}
+        <div class="empty" hidden data-empty>
+          <p>{t.empty}</p>
+          <button type="button" data-reset>
+            {t.reset}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  import { matches, readState, writeState, type FilterState } from '../lib/filter';
+  import type { Cost, Level } from '../schemas/catalog';
+
+  const form = document.querySelector<HTMLFormElement>('[data-filters]')!;
+  const count = document.querySelector<HTMLElement>('[data-count]')!;
+  const empty = document.querySelector<HTMLElement>('[data-empty]')!;
+  const rows = [...document.querySelectorAll<HTMLElement>('.resource')];
+  const sections = [...document.querySelectorAll<HTMLElement>('[data-entry]')];
+  const labels = JSON.parse(
+    document.querySelector<HTMLElement>('[data-counts]')!.dataset.counts!,
+  ) as {
+    one: string;
+    many: string;
+    zero: string;
+  };
+
+  function fromForm(): FilterState {
+    const d = new FormData(form);
+    return {
+      level: (d.get('nivel') as Level) || null,
+      cost: (d.get('custo') as Cost) || null,
+      query: String(d.get('q') ?? ''),
+    };
+  }
+
+  function toForm(s: FilterState) {
+    (form.elements.namedItem('q') as HTMLInputElement).value = s.query;
+    form.querySelector<HTMLInputElement>(`[name=nivel][value="${s.level ?? ''}"]`)!.checked = true;
+    form.querySelector<HTMLInputElement>(`[name=custo][value="${s.cost ?? ''}"]`)!.checked = true;
+  }
+
+  function apply(s: FilterState) {
+    let shown = 0;
+    for (const row of rows) {
+      const d = row.dataset;
+      const ok = matches(
+        {
+          name: d.name!,
+          summary: d.summary!,
+          from: d.from as Level,
+          to: d.to as Level,
+          cost: d.cost as Cost,
+        },
+        s,
+      );
+      row.hidden = !ok;
+      if (ok) shown++;
+    }
+    for (const sec of sections) {
+      const n = sec.querySelectorAll('.resource:not([hidden])').length;
+      sec.hidden = n === 0;
+      const idx = document.querySelector<HTMLElement>(`[data-index="${sec.id}"]`);
+      if (idx) {
+        idx.toggleAttribute('data-off', n === 0);
+        idx.querySelector('[data-index-count]')!.textContent = String(n);
+      }
+    }
+    count.textContent =
+      shown === 1
+        ? labels.one
+        : shown === 0
+          ? labels.zero
+          : labels.many.replace('{n}', String(shown));
+    empty.hidden = shown > 0;
+  }
+
+  function update() {
+    const s = fromForm();
+    apply(s);
+    history.replaceState(null, '', `${location.pathname}${writeState(s)}${location.hash}`);
+  }
+
+  form.addEventListener('input', update);
+  form.addEventListener('submit', (e) => e.preventDefault());
+  document.querySelector('[data-reset]')!.addEventListener('click', () => {
+    form.reset();
+    update();
+    form.querySelector<HTMLInputElement>('[name=nivel]')!.focus();
+  });
+
+  const initial = readState(new URLSearchParams(location.search));
+  toForm(initial);
+  apply(initial);
+</script>
+
+<style>
+  .intro {
+    padding-block: var(--space-7) var(--space-6);
+  }
+
+  h1 {
+    font-family: var(--font-entry);
+    font-weight: var(--weight-entry);
+    font-size: var(--type-h1);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    max-width: 20ch;
+  }
+
+  .intro p {
+    margin-top: var(--space-4);
+    max-width: var(--measure);
+    font-size: var(--type-prose);
+    color: var(--ink-2);
+  }
+
+  .intro a {
+    color: var(--ink);
+  }
+
+  .layout {
+    display: grid;
+    gap: var(--space-5);
+  }
+
+  .thumb-index {
+    min-width: 0;
+  }
+
+  .thumb-index ol {
+    display: flex;
+    gap: var(--space-1) var(--space-4);
+    margin: 0;
+    padding: var(--space-4) 0 0;
+    list-style: none;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+
+  .thumb-index a {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-2);
+    padding-block: var(--space-1);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .thumb-index .hw {
+    font-family: var(--font-entry);
+  }
+
+  .thumb-index a:hover .hw {
+    color: var(--pen-hover);
+  }
+
+  .thumb-index .n {
+    color: var(--ink-2);
+    font-size: var(--type-label);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .thumb-index [data-off] {
+    opacity: 0.45;
+  }
+
+  .empty {
+    padding-block: var(--space-7);
+    display: grid;
+    justify-items: start;
+    gap: var(--space-3);
+  }
+
+  .empty[hidden] {
+    display: none;
+  }
+
+  .empty button {
+    padding: var(--space-2) var(--space-4);
+    border: 1px solid var(--pen);
+    border-radius: var(--radius-control);
+    background: var(--pen);
+    color: var(--on-pen);
+    font: inherit;
+    cursor: pointer;
+    transition: background-color var(--duration-ui) var(--ease-out);
+  }
+
+  .empty button:hover {
+    background: var(--pen-hover);
+    border-color: var(--pen-hover);
+  }
+
+  @media (min-width: 64rem) {
+    .layout {
+      grid-template-columns: var(--index-width) minmax(0, 1fr);
+      gap: var(--space-7);
+    }
+    .thumb-index ol {
+      position: sticky;
+      top: 0;
+      flex-direction: column;
+      padding-top: var(--space-7);
+      overflow: visible;
+    }
+  }
+</style>

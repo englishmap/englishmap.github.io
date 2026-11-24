@@ -1,22 +1,23 @@
 ---
-import { LEVELS } from '../schemas/catalog';
-import { COST_SHORT } from '../lib/labels';
+import { COSTS, LEVELS, type Lang } from '../schemas/catalog';
+import { COST_LABEL, UI } from '../lib/i18n';
 
 interface Props {
   total: number;
+  lang: Lang;
 }
 
-const { total } = Astro.props;
-const costs = Object.entries(COST_SHORT);
+const { total, lang } = Astro.props;
+const t = UI[lang];
 ---
 
-<form class="filters" role="search" aria-label="Filtrar recursos" data-filters>
+<form class="filters" role="search" aria-label={t.filtersLabel} data-filters>
   <fieldset>
-    <legend>Nível</legend>
+    <legend>{t.level}</legend>
     <div class="options">
       <label>
         <input type="radio" name="nivel" value="" checked />
-        <span>Todos</span>
+        <span>{t.all}</span>
       </label>
       {LEVELS.map((l) => (
         <label>
@@ -27,32 +28,26 @@ const costs = Object.entries(COST_SHORT);
     </div>
   </fieldset>
   <fieldset>
-    <legend>Custo</legend>
+    <legend>{t.cost}</legend>
     <div class="options">
       <label>
         <input type="radio" name="custo" value="" checked />
-        <span>Todos</span>
+        <span>{t.all}</span>
       </label>
-      {costs.map(([value, label]) => (
+      {COSTS.map((value) => (
         <label>
           <input type="radio" name="custo" value={value} />
-          <span>{label}</span>
+          <span>{COST_LABEL[lang][value]}</span>
         </label>
       ))}
     </div>
   </fieldset>
   <label class="query">
-    <span class="sr-only">Filtrar por nome ou descrição</span>
-    <input
-      type="search"
-      name="q"
-      placeholder="Filtrar por nome ou descrição"
-      autocomplete="off"
-      spellcheck="false"
-    />
+    <span class="sr-only">{t.query}</span>
+    <input type="search" name="q" placeholder={t.query} autocomplete="off" spellcheck="false" />
   </label>
   <p class="count" aria-live="polite" data-count>
-    {total} recursos
+    {t.count(total)}
   </p>
 </form>
 

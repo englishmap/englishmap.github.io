@@ -1,6 +1,6 @@
 # englishmap — guia para agentes
 
-Diretório estático (Astro) de recursos para imersão em inglês online, em português do Brasil. Uma página de recursos filtrável e um guia de leitura. Sem servidor, sem banco, sem rastreamento.
+Diretório estático (Astro) de recursos para imersão em inglês online, em português (`/`) e inglês (`/en/`). Uma página de recursos filtrável e um guia de leitura. Sem servidor, sem banco, sem rastreamento.
 
 ## Comandos
 
@@ -20,7 +20,8 @@ Diretório estático (Astro) de recursos para imersão em inglês online, em por
 
 ## Regras
 
-- Texto da interface em pt-BR, sentence case, sem exclamações e sem palavras de marketing. Nomes de recursos ficam como no original.
+- Todo texto de interface fica em `src/lib/i18n.ts` (pt e en); textos do catálogo têm `pt` e `en`. Rotas por idioma em `ROUTES`.
+- Sentence case, sem exclamações e sem palavras de marketing. Nomes de recursos ficam como no original.
 - Não inventar números, preços ou avaliações. Nível e custo são conferidos no site do recurso.
 - Nenhum script, fonte ou imagem de terceiros em tempo de execução. Fontes vêm do `@fontsource`.
 - Cores, espaços e tipos só via tokens. O vermelho (`--pen`) é só para ação, foco e estado atual.

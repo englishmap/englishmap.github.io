@@ -1,13 +1,15 @@
 ---
-import type { Category, Resource } from '../schemas/catalog';
+import type { Category, Lang, Resource } from '../schemas/catalog';
+import { UI } from '../lib/i18n';
 import ResourceRow from './ResourceRow.astro';
 
 interface Props {
   category: Category;
   resources: Resource[];
+  lang: Lang;
 }
 
-const { category: c, resources } = Astro.props;
+const { category: c, resources, lang } = Astro.props;
 ---
 
 <section class="entry" id={c.id} aria-labelledby={`h-${c.id}`} data-entry>
@@ -15,14 +17,14 @@ const { category: c, resources } = Astro.props;
     <p class="headline" lang="en">
       <span class="headword">{c.headword}</span>
       <span class="ipa">{c.ipa}</span>
-      <span class="pos">verb</span>
+      <span class="pos">{UI[lang].pos}</span>
     </p>
-    <h2 id={`h-${c.id}`}>{c.title}</h2>
-    <p class="definition">{c.summary}</p>
+    <h2 id={`h-${c.id}`}>{c.title[lang]}</h2>
+    <p class="definition">{c.summary[lang]}</p>
   </header>
   <ul>
     {resources.map((r) => (
-      <ResourceRow resource={r} />
+      <ResourceRow resource={r} lang={lang} />
     ))}
   </ul>
 </section>

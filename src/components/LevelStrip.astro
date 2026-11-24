@@ -1,25 +1,28 @@
 ---
-import { LEVELS, type Level } from '../schemas/catalog';
+import { LEVELS, type Lang, type Level } from '../schemas/catalog';
+import { UI } from '../lib/i18n';
 
 interface Props {
   from: Level;
   to: Level;
+  lang: Lang;
 }
 
-const { from, to } = Astro.props;
+const { from, to, lang } = Astro.props;
+const t = UI[lang];
 const a = LEVELS.indexOf(from);
 const b = LEVELS.indexOf(to);
-const label = from === to ? from : `${from} a ${to}`;
+const label = from === to ? from : t.levelRange(from, to);
 ---
 
-<span class="level" title={`Níveis ${label}`}>
+<span class="level" title={`${t.levels} ${label}`}>
   <span class="cells" aria-hidden="true">
     {LEVELS.map((_l, i) => (
       <span class:list={['cell', { on: i >= a && i <= b }]} />
     ))}
   </span>
   <span class="range">
-    <span class="sr-only">Níveis </span>
+    <span class="sr-only">{t.levels} </span>
     {from === to ? from : `${from}–${to}`}
   </span>
 </span>
