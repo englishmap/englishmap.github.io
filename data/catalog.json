@@ -87,8 +87,8 @@
         "en": "Write"
       },
       "summary": {
-        "pt": "Diário em inglês corrigido por nativos e verificadores que explicam o erro em vez de só trocar a palavra.",
-        "en": "An English journal corrected by native speakers, and checkers that explain the mistake instead of just swapping the word."
+        "pt": "Diário em inglês corrigido por nativos e corretores que explicam cada erro.",
+        "en": "An English journal corrected by native speakers, and checkers that explain each mistake."
       }
     },
     {
@@ -248,8 +248,8 @@
       "category": "ouvir",
       "format": "audio-video",
       "summary": {
-        "pt": "Notícias lidas devagar, com vocabulário limitado e texto completo ao lado. Um dos poucos materiais bons para iniciantes.",
-        "en": "News read slowly, with limited vocabulary and the full text alongside. One of the few good materials for beginners."
+        "pt": "Notícias lidas devagar, com vocabulário limitado e o texto completo ao lado. Dá para acompanhar mesmo no começo.",
+        "en": "News read slowly, with limited vocabulary and the full text alongside. You can follow it even at the start."
       },
       "from": "A1",
       "to": "B1",
@@ -290,8 +290,8 @@
       "category": "ouvir",
       "format": "podcast",
       "summary": {
-        "pt": "Um professor britânico fala longamente sobre cultura, humor e língua. Bom para ganhar resistência a episódios de uma hora.",
-        "en": "A British teacher talks at length about culture, humour and language. Good for building stamina for hour-long episodes."
+        "pt": "Um professor britânico fala longamente sobre cultura, humor e língua. Muitos episódios passam de uma hora, o que treina a atenção para conversas longas.",
+        "en": "A British teacher talks at length about culture, humour and language. Many episodes run past an hour, which trains your attention for long conversations."
       },
       "from": "B1",
       "to": "C2",
@@ -346,8 +346,8 @@
       "category": "ouvir",
       "format": "podcast",
       "summary": {
-        "pt": "Diálogos do cotidiano lidos devagar e depois explicados frase a frase. Um dos podcasts para aprendizes mais antigos.",
-        "en": "Everyday dialogues read slowly and then explained line by line. One of the oldest podcasts for learners."
+        "pt": "Diálogos do cotidiano lidos devagar e depois explicados frase a frase por um professor.",
+        "en": "Everyday dialogues read slowly, then explained line by line by a teacher."
       },
       "from": "A2",
       "to": "B2",
@@ -416,8 +416,8 @@
       "category": "assistir",
       "format": "youtube",
       "summary": {
-        "pt": "Desenho infantil britânico com frases curtas, fala clara e situações domésticas. Funciona para adultos no começo.",
-        "en": "A British children’s cartoon with short sentences, clear speech and everyday situations at home. Works for adults at the start."
+        "pt": "Desenho infantil britânico com episódios de cinco minutos, frases curtas e fala clara. É para crianças, mas funciona bem para adultos no começo.",
+        "en": "A British children’s cartoon with five-minute episodes, short sentences and clear speech. It is made for children, but works well for adults at the start."
       },
       "from": "A1",
       "to": "A2",
@@ -458,8 +458,8 @@
       "category": "assistir",
       "format": "video",
       "summary": {
-        "pt": "Dez minutos de notícias por dia, feitos para estudantes do ensino médio americano. Fala rápida, mas com contexto.",
-        "en": "Ten minutes of news a day, made for American high school students. Fast speech, but with context."
+        "pt": "Dez minutos de notícias por dia, feitos para estudantes do ensino médio americano. O ritmo é rápido, mas imagens e mapas ajudam a acompanhar.",
+        "en": "Ten minutes of news a day, made for American high school students. The pace is fast, but pictures and maps help you keep up."
       },
       "from": "B1",
       "to": "C1",
@@ -570,8 +570,8 @@
       "category": "assistir",
       "format": "youtube",
       "summary": {
-        "pt": "Ciência e engenharia explicadas com experimentos. Bom para ouvir inglês técnico com contexto visual.",
-        "en": "Science and engineering explained through experiments. Good for hearing technical English with visual context."
+        "pt": "Ciência e engenharia explicadas com experimentos. Você ouve inglês técnico enquanto vê a coisa acontecer.",
+        "en": "Science and engineering explained through experiments. You hear technical English while you watch it happen."
       },
       "from": "B2",
       "to": "C2",
@@ -584,8 +584,8 @@
       "category": "assistir",
       "format": "youtube",
       "summary": {
-        "pt": "Um britânico conta, em poucos minutos e sem cortes, a história de lugares e fatos curiosos. Fala rápida e precisa.",
-        "en": "A British presenter tells, in a few minutes and in one take, the story behind curious places and facts. Fast, precise speech."
+        "pt": "Um britânico conta, em vídeos curtos gravados sem cortes, a história de lugares e fatos curiosos. Ele fala rápido e com precisão.",
+        "en": "A British presenter tells the story behind curious places and facts in short videos shot in one take. He speaks fast and precisely."
       },
       "from": "C1",
       "to": "C2",
@@ -598,8 +598,8 @@
       "category": "series",
       "format": "series",
       "summary": {
-        "pt": "Desenho australiano com episódios de sete minutos, frases curtas e situações de família. Bom primeiro contato com sotaque australiano.",
-        "en": "An Australian cartoon with seven-minute episodes, short sentences and family situations. A gentle first contact with the Australian accent."
+        "pt": "Desenho australiano com episódios de sete minutos, frases curtas e situações de família. Um jeito tranquilo de se acostumar ao sotaque australiano.",
+        "en": "An Australian cartoon with seven-minute episodes, short sentences and family situations. An easy way to get used to the Australian accent."
       },
       "from": "A1",
       "to": "A2",
@@ -612,8 +612,8 @@
       "category": "series",
       "format": "series",
       "summary": {
-        "pt": "A comédia mais usada para aprender: diálogos do cotidiano, piadas que se repetem e inglês americano claro.",
-        "en": "The sitcom most used for learning: everyday dialogue, running jokes and clear American English."
+        "pt": "Comédia muito usada por quem aprende inglês. Os diálogos são do dia a dia, as piadas voltam e o inglês americano é claro.",
+        "en": "A sitcom many learners use. The dialogue is everyday, the jokes come back, and the American English is clear."
       },
       "from": "B1",
       "to": "B2",
@@ -654,8 +654,8 @@
       "category": "series",
       "format": "series",
       "summary": {
-        "pt": "O dia a dia de um escritório americano. Ótimo para o inglês de reunião, e-mail e conversa com colegas.",
-        "en": "Daily life in an American office. Great for the English of meetings, emails and small talk with colleagues."
+        "pt": "O dia a dia de um escritório americano, com o inglês de reunião, e-mail e conversa com colegas.",
+        "en": "Daily life in an American office, with the English of meetings, emails and small talk with colleagues."
       },
       "from": "B2",
       "to": "C1",
@@ -696,8 +696,8 @@
       "category": "series",
       "format": "series",
       "summary": {
-        "pt": "Diálogos britânicos muito rápidos e vocabulário amplo. Um bom teste para quem já está avançado.",
-        "en": "Very fast British dialogue and wide vocabulary. A good test once you are advanced."
+        "pt": "Diálogos britânicos muito rápidos e vocabulário amplo. Vale deixar para quando estiver avançado.",
+        "en": "Very fast British dialogue and a wide vocabulary. Save it for when you are advanced."
       },
       "from": "C1",
       "to": "C2",
@@ -780,8 +780,8 @@
       "category": "ler",
       "format": "books",
       "summary": {
-        "pt": "Romances e clássicos reescritos por nível do Quadro Europeu. O formato mais antigo de leitura graduada.",
-        "en": "Novels and classics rewritten for each CEFR level. The oldest format of graded reading."
+        "pt": "Romances e clássicos reescritos para cada nível do Quadro Europeu, do iniciante ao C1.",
+        "en": "Novels and classics rewritten for each CEFR level, from beginner to C1."
       },
       "from": "A1",
       "to": "C1",
@@ -892,8 +892,8 @@
       "category": "falar",
       "format": "lessons",
       "summary": {
-        "pt": "Marketplace de professores com aula experimental. Bom para combinar um horário fixo semanal.",
-        "en": "A marketplace of teachers with a trial lesson. Good for setting a fixed weekly slot."
+        "pt": "Marketplace de professores com aula experimental. Dá para marcar um horário fixo toda semana com a mesma pessoa.",
+        "en": "A marketplace of teachers with a trial lesson. You can book the same teacher at a fixed time every week."
       },
       "from": "A1",
       "to": "C2",
@@ -920,8 +920,8 @@
       "category": "falar",
       "format": "app",
       "summary": {
-        "pt": "Conversa por voz com um tutor de IA que corrige pronúncia e gramática. Bom para perder a vergonha antes de falar com pessoas.",
-        "en": "Voice conversations with an AI tutor that corrects pronunciation and grammar. Good for getting over shyness before talking to people."
+        "pt": "Conversa por voz com um tutor de IA que corrige pronúncia e gramática. Ajuda quem trava na hora de falar com gente.",
+        "en": "Voice conversations with an AI tutor that corrects pronunciation and grammar. It helps if you freeze up when talking to people."
       },
       "from": "A1",
       "to": "B2",
@@ -976,8 +976,8 @@
       "category": "escrever",
       "format": "community",
       "summary": {
-        "pt": "Comunidade em que cada pessoa posta um texto por dia e falantes nativos corrigem. Bom para criar o hábito.",
-        "en": "A community where each person posts a text a day and native speakers correct it. Good for building the habit."
+        "pt": "Comunidade em que cada pessoa posta um texto por dia e falantes nativos corrigem. Postar todo dia é o que cria o hábito.",
+        "en": "A community where each person posts a text a day and native speakers correct it. Posting every day is what builds the habit."
       },
       "from": "B1",
       "to": "C2",
