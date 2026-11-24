@@ -1,0 +1,19 @@
+[tools]
+node = "24"
+pnpm = "10.21.0"
+
+[tasks.dev]
+run = "pnpm dev"
+
+[tasks.check]
+description = "Definition of done: format, types, catalog schema and tests"
+run = "pnpm check"
+
+[tasks."check:all"]
+run = ["pnpm check", "pnpm build"]
+
+[tasks.fix]
+run = "pnpm format"
+
+[tasks.test]
+run = "pnpm test"

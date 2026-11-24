@@ -1,0 +1,27 @@
+---
+import { url } from '../lib/paths';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Página não encontrada | englishmap" description="Esta página não existe.">
+  <div class="wrap missing">
+    <h1>Página não encontrada</h1>
+    <p>
+      O endereço pode ter mudado. <a href={url('/')}>Volte para a lista de recursos</a>.
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .missing {
+    padding-block: var(--space-8);
+  }
+  h1 {
+    font-family: var(--font-entry);
+    font-size: var(--type-h1);
+  }
+  p {
+    margin-top: var(--space-4);
+    color: var(--ink-2);
+  }
+</style>

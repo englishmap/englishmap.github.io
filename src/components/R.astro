@@ -1,0 +1,13 @@
+---
+import { byId, catalog } from '../lib/catalog';
+
+interface Props {
+  id: string;
+}
+
+const r = byId(catalog, Astro.props.id);
+---
+
+<a href={r.url} rel="noopener">
+  {r.name}
+</a>

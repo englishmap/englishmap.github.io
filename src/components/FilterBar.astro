@@ -1,0 +1,162 @@
+---
+import { LEVELS } from '../schemas/catalog';
+import { COST_SHORT } from '../lib/labels';
+
+interface Props {
+  total: number;
+}
+
+const { total } = Astro.props;
+const costs = Object.entries(COST_SHORT);
+---
+
+<form class="filters" role="search" aria-label="Filtrar recursos" data-filters>
+  <fieldset>
+    <legend>Nível</legend>
+    <div class="options">
+      <label>
+        <input type="radio" name="nivel" value="" checked />
+        <span>Todos</span>
+      </label>
+      {LEVELS.map((l) => (
+        <label>
+          <input type="radio" name="nivel" value={l} />
+          <span>{l}</span>
+        </label>
+      ))}
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Custo</legend>
+    <div class="options">
+      <label>
+        <input type="radio" name="custo" value="" checked />
+        <span>Todos</span>
+      </label>
+      {costs.map(([value, label]) => (
+        <label>
+          <input type="radio" name="custo" value={value} />
+          <span>{label}</span>
+        </label>
+      ))}
+    </div>
+  </fieldset>
+  <label class="query">
+    <span class="sr-only">Filtrar por nome ou descrição</span>
+    <input
+      type="search"
+      name="q"
+      placeholder="Filtrar por nome ou descrição"
+      autocomplete="off"
+      spellcheck="false"
+    />
+  </label>
+  <p class="count" aria-live="polite" data-count>
+    {total} recursos
+  </p>
+</form>
+
+<style>
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: var(--space-4) var(--space-6);
+    padding-block: var(--space-5);
+    border-block: 1px solid var(--rule);
+  }
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-width: 0;
+  }
+
+  legend {
+    padding: 0;
+    margin-bottom: var(--space-2);
+    font-size: var(--type-label);
+    color: var(--ink-2);
+  }
+
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+  }
+
+  .options label {
+    position: relative;
+  }
+
+  .options input {
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .options span {
+    display: inline-block;
+    min-width: 2.5rem;
+    padding: var(--space-1) var(--space-3);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius-control);
+    font-size: var(--type-data);
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+    transition:
+      border-color var(--duration-ui) var(--ease-out),
+      background-color var(--duration-ui) var(--ease-out);
+  }
+
+  .options label:hover span {
+    border-color: var(--rule-strong);
+  }
+
+  .options input:checked + span {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--canvas);
+  }
+
+  .options input:focus-visible + span {
+    outline: 2px solid var(--pen);
+    outline-offset: 2px;
+  }
+
+  .query {
+    flex: 1 1 16rem;
+  }
+
+  .query input {
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--rule-strong);
+    border-radius: var(--radius-control);
+    background: var(--canvas);
+    color: var(--ink);
+    font: inherit;
+    font-size: var(--type-body);
+  }
+
+  .query input::placeholder {
+    color: var(--ink-2);
+  }
+
+  .query input:focus-visible {
+    outline: 2px solid var(--pen);
+    outline-offset: 0;
+    border-color: transparent;
+  }
+
+  .count {
+    margin-inline-start: auto;
+    font-size: var(--type-data);
+    color: var(--ink-2);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+</style>

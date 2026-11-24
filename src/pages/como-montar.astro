@@ -1,0 +1,354 @@
+---
+import { url } from '../lib/paths';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import R from '../components/R.astro';
+import LevelStrip from '../components/LevelStrip.astro';
+---
+
+<BaseLayout
+  title="Como montar uma imersão em inglês em casa | englishmap"
+  description="Como trocar o idioma do seu ambiente, o que ouvir e ler em cada nível e um exemplo de dia com cerca de duas horas de inglês."
+>
+  <article class="wrap prose">
+    <h1>Como montar uma imersão em inglês em casa</h1>
+    <p class="lead">
+      Quem mora fora aprende porque passa o dia ouvindo, lendo e respondendo em inglês, quase sempre
+      sobre coisas que entende pelo contexto. O plano abaixo tenta reproduzir isso com o que você
+      tem em casa: o celular, o computador, os fones e algumas conversas por semana.
+    </p>
+
+    <h2>Por que funciona</h2>
+    <p>
+      A base é a ideia de <em>input compreensível</em>, de Stephen Krashen: a gente adquire uma
+      língua quando entende mensagens nela, de preferência um pouco acima do nível atual. Estudar
+      gramática ajuda a organizar, mas o que faz o inglês sair sem tradução mental é muita exposição
+      a coisas que você entende e quer entender.
+    </p>
+    <p>
+      Por isso imersão, aqui, não quer dizer morar em outro país. Quer dizer passar o maior número
+      possível de horas fazendo em inglês o que você já faria de qualquer jeito: ver vídeos, ouvir
+      algo no trajeto, ler sobre o seu assunto favorito, conversar.
+    </p>
+
+    <h2>Comece pelo ambiente</h2>
+    <p>Uma tarde de configuração vale por semanas de força de vontade.</p>
+    <ol class="steps">
+      <li>
+        <strong>Celular e computador em inglês.</strong> A primeira semana é estranha. Depois você
+        nem percebe, e os menus que já sabe de cor viram vocabulário.
+      </li>
+      <li>
+        <strong>Perfis de streaming em inglês, com legenda em inglês.</strong> Legenda em português
+        faz você ler em vez de ouvir. A extensão <R id="language-reactor" /> mostra as duas quando
+        precisar.
+      </li>
+      <li>
+        <strong>Redes sociais sobre o que você já acompanha.</strong> Siga perfis em inglês de
+        futebol, culinária, programação, maquiagem, o que for. O algoritmo faz o resto.
+      </li>
+      <li>
+        <strong>Jogos com texto e voz em inglês.</strong> Você lê e ouve sem perceber que está
+        estudando.
+      </li>
+      <li>
+        <strong>Dicionário inglês-inglês no lugar do tradutor.</strong> O{' '}
+        <R id="cambridge-dictionary" /> explica a palavra com outras que você já sabe e mostra o
+        nível dela.
+      </li>
+      <li>
+        <strong>Fale sozinho.</strong> Narre em voz alta o que está fazendo enquanto cozinha ou
+        arruma a casa. Quando faltar uma palavra, anote e procure depois.
+      </li>
+    </ol>
+
+    <h2>Atenção total e som de fundo</h2>
+    <p>
+      Assistir a um episódio prestando atenção, voltando trechos e procurando palavras é imersão
+      ativa. Deixar um podcast tocando enquanto lava a louça é passiva. As duas contam, mas a ativa
+      rende muito mais por hora. Use a passiva para preencher tempo que seria perdido, de
+      preferência com coisas que você já viu com atenção antes.
+    </p>
+    <p>
+      Uma regra simples para escolher o material: se você precisa pausar a cada frase, está difícil
+      demais e vale descer um nível. Se entende tudo sem esforço, suba.
+    </p>
+
+    <h2>O que usar em cada fase</h2>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Fase</th>
+            <th scope="col">Ouvir e assistir</th>
+            <th scope="col">Ler</th>
+            <th scope="col">Falar e escrever</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">
+              Começo
+              <LevelStrip from="A1" to="A2" />
+            </th>
+            <td>
+              <R id="peppa-pig" />, <R id="voa-learning-english" /> e <R id="easy-stories" />.
+              Imagem e repetição ajudam mais que velocidade.
+            </td>
+            <td>
+              Nível 1 do <R id="news-in-levels" /> e os níveis mais baixos do{' '}
+              <R id="breaking-news-english" />.
+            </td>
+            <td>
+              Repita frases em voz alta. Uma trilha curta como o <R id="usa-learns" /> dá a
+              estrutura básica.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              Meio
+              <LevelStrip from="B1" to="B2" />
+            </th>
+            <td>
+              <R id="6-minute-english" />, <R id="easy-english" />, <R id="all-ears-english" /> e
+              séries com legenda em inglês.
+            </td>
+            <td>
+              <R id="simple-wikipedia" />, <R id="lingq" /> e um livro do <R id="penguin-readers" />{' '}
+              por mês.
+            </td>
+            <td>
+              Conversa toda semana no <R id="tandem" /> ou no <R id="free4talk" /> e um parágrafo
+              por dia no <R id="langcorrect" />.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              Fluência
+              <LevelStrip from="C1" to="C2" />
+            </th>
+            <td>
+              <R id="this-american-life" />, <R id="ted" />, <R id="kurzgesagt" /> e séries sem
+              legenda.
+            </td>
+            <td>
+              <R id="the-guardian" /> e livros sem adaptação do <R id="standard-ebooks" />.
+            </td>
+            <td>
+              Conversa livre sobre temas difíceis, textos longos e ajuste fino de pronúncia no{' '}
+              <R id="youglish" />.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Um dia de exemplo</h2>
+    <p>
+      Para alguém no nível B1 que trabalha fora o dia todo. São cerca de duas horas de inglês, quase
+      todas encaixadas em momentos que já existem na rotina.
+    </p>
+    <div class="table-scroll">
+      <table class="day">
+        <thead>
+          <tr>
+            <th scope="col">Quando</th>
+            <th scope="col">Tempo</th>
+            <th scope="col">O quê</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Ao se arrumar</th>
+            <td>15 min</td>
+            <td>
+              Um episódio do <R id="6-minute-english" />.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">No trajeto</th>
+            <td>30 min</td>
+            <td>
+              <R id="all-ears-english" /> ou um episódio já ouvido, como reforço.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">No almoço</th>
+            <td>15 min</td>
+            <td>
+              Uma notícia do <R id="breaking-news-english" /> no seu nível.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Fim da tarde</th>
+            <td>20 min</td>
+            <td>
+              Conversa no <R id="tandem" /> ou numa sala do <R id="free4talk" />, três vezes por
+              semana.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">À noite</th>
+            <td>45 min</td>
+            <td>
+              Um episódio de série com legenda em inglês e o <R id="language-reactor" />.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Antes de dormir</th>
+            <td>10 min</td>
+            <td>
+              Três frases no <R id="langcorrect" /> e a revisão do dia no <R id="anki" />.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Como saber se está funcionando</h2>
+    <ul>
+      <li>
+        Anote as horas por dia num caderno ou planilha. O total acumulado é o que mais se relaciona
+        com o progresso, e ver o número subir ajuda a manter o hábito.
+      </li>
+      <li>
+        Faça o <R id="ef-set" /> agora e de novo a cada três meses. Compare as notas de leitura e de
+        audição separadamente.
+      </li>
+      <li>
+        Releia ou reveja algo que era difícil três meses atrás. Perceber que ficou fácil é a melhor
+        medida.
+      </li>
+    </ul>
+
+    <h2>Para ler mais</h2>
+    <ul class="sources">
+      <li>
+        Stephen Krashen,
+        <a href="https://www.sdkrashen.com/content/books/principles_and_practice.pdf" lang="en">
+          Principles and Practice in Second Language Acquisition
+        </a>{' '}
+        (1982). O livro que formulou a hipótese do input.
+      </li>
+      <li>
+        Refold,
+        <a href="https://refold.la/roadmap/phase-0/0c-immerse-in-the-language" lang="en">
+          Immerse in the language
+        </a>
+        . Um roteiro de aprendizado baseado em imersão, em inglês.
+      </li>
+    </ul>
+
+    <p class="back">
+      <a href={url('/')}>Ver todos os recursos</a>
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .prose {
+    max-width: calc(var(--measure) + 2 * var(--space-6));
+    padding-block: var(--space-7) 0;
+    font-size: var(--type-prose);
+    line-height: 1.65;
+  }
+
+  h1 {
+    font-family: var(--font-entry);
+    font-weight: var(--weight-entry);
+    font-size: var(--type-h1);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .lead {
+    margin-top: var(--space-5);
+    font-size: var(--type-h3);
+    line-height: 1.5;
+    color: var(--ink-2);
+  }
+
+  h2 {
+    margin-top: var(--space-7);
+    margin-bottom: var(--space-3);
+    font-family: var(--font-entry);
+    font-weight: var(--weight-entry);
+    font-size: var(--type-h2);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  p + p {
+    margin-top: var(--space-4);
+  }
+
+  ol,
+  ul {
+    padding-inline-start: 1.25em;
+    margin: var(--space-4) 0 0;
+  }
+
+  li + li {
+    margin-top: var(--space-3);
+  }
+
+  li::marker {
+    color: var(--ink-2);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .table-scroll {
+    margin-top: var(--space-4);
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    min-width: 36rem;
+    border-collapse: collapse;
+    font-size: var(--type-data);
+    line-height: 1.5;
+  }
+
+  th,
+  td {
+    padding: var(--space-3) var(--space-3) var(--space-3) 0;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  thead th {
+    font-weight: var(--weight-regular);
+    color: var(--ink-2);
+    border-bottom-color: var(--rule-strong);
+  }
+
+  tbody th {
+    font-weight: var(--weight-strong);
+    white-space: nowrap;
+  }
+
+  tbody th :global(.level) {
+    display: flex;
+    margin-top: var(--space-1);
+    font-weight: var(--weight-regular);
+  }
+
+  .day {
+    min-width: 30rem;
+  }
+
+  .day td:nth-child(2) {
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink-2);
+  }
+
+  .sources {
+    color: var(--ink-2);
+  }
+
+  .back {
+    margin-top: var(--space-7);
+  }
+</style>

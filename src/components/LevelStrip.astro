@@ -1,0 +1,53 @@
+---
+import { LEVELS, type Level } from '../schemas/catalog';
+
+interface Props {
+  from: Level;
+  to: Level;
+}
+
+const { from, to } = Astro.props;
+const a = LEVELS.indexOf(from);
+const b = LEVELS.indexOf(to);
+const label = from === to ? from : `${from} a ${to}`;
+---
+
+<span class="level" title={`Níveis ${label}`}>
+  <span class="cells" aria-hidden="true">
+    {LEVELS.map((_l, i) => (
+      <span class:list={['cell', { on: i >= a && i <= b }]} />
+    ))}
+  </span>
+  <span class="range">
+    <span class="sr-only">Níveis </span>
+    {from === to ? from : `${from}–${to}`}
+  </span>
+</span>
+
+<style>
+  .level {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--type-data);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .cells {
+    display: inline-grid;
+    grid-template-columns: repeat(6, 0.5rem);
+    gap: 2px;
+  }
+  .cell {
+    height: 0.75rem;
+    background: var(--level-off);
+    border-radius: 1px;
+  }
+  .cell.on {
+    background: var(--level-on);
+  }
+  .range {
+    min-width: 3.25rem;
+    color: var(--ink-2);
+  }
+</style>

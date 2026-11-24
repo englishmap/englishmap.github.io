@@ -1,0 +1,82 @@
+---
+import type { Category, Resource } from '../schemas/catalog';
+import ResourceRow from './ResourceRow.astro';
+
+interface Props {
+  category: Category;
+  resources: Resource[];
+}
+
+const { category: c, resources } = Astro.props;
+---
+
+<section class="entry" id={c.id} aria-labelledby={`h-${c.id}`} data-entry>
+  <header>
+    <p class="headline" lang="en">
+      <span class="headword">{c.headword}</span>
+      <span class="ipa">{c.ipa}</span>
+      <span class="pos">verb</span>
+    </p>
+    <h2 id={`h-${c.id}`}>{c.title}</h2>
+    <p class="definition">{c.summary}</p>
+  </header>
+  <ul>
+    {resources.map((r) => (
+      <ResourceRow resource={r} />
+    ))}
+  </ul>
+</section>
+
+<style>
+  .entry {
+    padding-top: var(--space-7);
+  }
+
+  .entry[hidden] {
+    display: none;
+  }
+
+  .headline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--space-1) var(--space-3);
+  }
+
+  .headword {
+    font-family: var(--font-entry);
+    font-weight: var(--weight-entry);
+    font-size: var(--type-h2);
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+
+  .ipa {
+    font-size: var(--type-h3);
+  }
+
+  .pos {
+    font-family: var(--font-entry);
+    font-style: italic;
+    color: var(--ink-2);
+  }
+
+  h2 {
+    margin-top: var(--space-2);
+    font-size: var(--type-body);
+    font-weight: var(--weight-strong);
+  }
+
+  .definition {
+    margin-top: var(--space-1);
+    max-width: var(--measure);
+    color: var(--ink-2);
+  }
+
+  ul {
+    margin: var(--space-4) 0 0;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid var(--rule);
+  }
+</style>

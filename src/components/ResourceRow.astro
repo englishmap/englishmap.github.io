@@ -1,0 +1,115 @@
+---
+import type { Resource } from '../schemas/catalog';
+import { COST_SHORT, COST_LABEL } from '../lib/labels';
+import LevelStrip from './LevelStrip.astro';
+
+interface Props {
+  resource: Resource;
+}
+
+const { resource: r } = Astro.props;
+---
+
+<li
+  class="resource"
+  data-from={r.from}
+  data-to={r.to}
+  data-cost={r.cost}
+  data-name={r.name}
+  data-summary={r.summary}
+>
+  <div class="what">
+    <a class="name" href={r.url} rel="noopener">
+      {r.name}
+    </a>
+    <p class="summary">{r.summary}</p>
+  </div>
+  <dl class="facts">
+    <div>
+      <dt class="sr-only">Formato</dt>
+      <dd class="format">{r.format}</dd>
+    </div>
+    <div>
+      <dt class="sr-only">Nível</dt>
+      <dd>
+        <LevelStrip from={r.from} to={r.to} />
+      </dd>
+    </div>
+    <div>
+      <dt class="sr-only">Custo</dt>
+      <dd class:list={['cost', r.cost]} title={COST_LABEL[r.cost]}>
+        {COST_SHORT[r.cost]}
+      </dd>
+    </div>
+  </dl>
+</li>
+
+<style>
+  .resource {
+    display: grid;
+    gap: var(--space-2);
+    padding-block: var(--space-4);
+    border-top: 1px solid var(--rule);
+  }
+
+  .resource[hidden] {
+    display: none;
+  }
+
+  .name {
+    font-weight: var(--weight-strong);
+    text-decoration-color: transparent;
+  }
+
+  .name:hover {
+    text-decoration-color: currentColor;
+  }
+
+  .summary {
+    margin-top: var(--space-1);
+    color: var(--ink-2);
+    font-size: var(--type-data);
+    max-width: var(--measure);
+  }
+
+  .facts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2) var(--space-5);
+    margin: 0;
+    font-size: var(--type-data);
+  }
+
+  dd {
+    margin: 0;
+  }
+
+  .format {
+    color: var(--ink-2);
+  }
+
+  .cost.free {
+    color: var(--ink);
+  }
+  .cost.freemium,
+  .cost.paid {
+    color: var(--ink-2);
+  }
+  .cost.paid::before {
+    content: '$ ';
+  }
+
+  @media (min-width: 56rem) {
+    .resource {
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: var(--space-6);
+      align-items: baseline;
+    }
+    .facts {
+      display: grid;
+      grid-template-columns: 6.5rem 7.5rem 4.5rem;
+      gap: var(--space-4);
+    }
+  }
+</style>

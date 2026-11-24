@@ -1,0 +1,87 @@
+/* Design tokens. Rationale and contrast targets: docs/design/brief.md */
+
+:root {
+  /* Interface and data: the reader's own system face, zero download. */
+  --font-ui: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  /* Headwords and phonetic transcription: Charis SIL, made by SIL for linguists, full IPA coverage. */
+  --font-entry: 'Charis SIL', 'Charis', Georgia, serif;
+
+  --type-label: 0.8125rem;
+  --type-data: 0.875rem;
+  --type-body: 1rem;
+  --type-prose: 1.0625rem;
+  --type-h3: 1.25rem;
+  --type-h2: 1.5625rem;
+  --type-h1: clamp(2rem, 1.4rem + 2.4vw, 3rem);
+  --weight-regular: 400;
+  --weight-strong: 600;
+  --weight-entry: 700;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 5rem;
+
+  --measure: 64ch;
+  --page-max: 72rem;
+  --index-width: 11rem;
+
+  --radius-control: 3px;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --duration-ui: 140ms;
+  --z-sticky: 10;
+
+  /* Light: plain white paper, graphite ink, one red pen. */
+  --canvas: oklch(0.99 0.002 250);
+  --ink: oklch(0.22 0.01 260);
+  --ink-2: oklch(0.47 0.012 260);
+  --rule: oklch(0.91 0.004 260);
+  --rule-strong: oklch(0.78 0.006 260);
+  --level-on: oklch(0.36 0.012 260);
+  --level-off: oklch(0.9 0.004 260);
+  --pen: oklch(0.52 0.19 27);
+  --pen-hover: oklch(0.44 0.17 27);
+  --on-pen: oklch(0.99 0.002 250);
+  --wash: oklch(0.96 0.02 27);
+  --selection: oklch(0.9 0.06 27);
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --canvas: oklch(0.195 0.008 260);
+    --ink: oklch(0.93 0.005 260);
+    --ink-2: oklch(0.74 0.01 260);
+    --rule: oklch(0.3 0.01 260);
+    --rule-strong: oklch(0.44 0.012 260);
+    --level-on: oklch(0.82 0.008 260);
+    --level-off: oklch(0.32 0.01 260);
+    --pen: oklch(0.74 0.14 27);
+    --pen-hover: oklch(0.82 0.11 27);
+    --on-pen: oklch(0.18 0.01 260);
+    --wash: oklch(0.26 0.03 27);
+    --selection: oklch(0.38 0.08 27);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --canvas: oklch(0.195 0.008 260);
+  --ink: oklch(0.93 0.005 260);
+  --ink-2: oklch(0.74 0.01 260);
+  --rule: oklch(0.3 0.01 260);
+  --rule-strong: oklch(0.44 0.012 260);
+  --level-on: oklch(0.82 0.008 260);
+  --level-off: oklch(0.32 0.01 260);
+  --pen: oklch(0.74 0.14 27);
+  --pen-hover: oklch(0.82 0.11 27);
+  --on-pen: oklch(0.18 0.01 260);
+  --wash: oklch(0.26 0.03 27);
+  --selection: oklch(0.38 0.08 27);
+  color-scheme: dark;
+}

@@ -1,0 +1,26 @@
+---
+import { catalog } from '../lib/catalog';
+---
+
+<footer class="site-footer wrap">
+  <p>
+    {catalog.resources.length} recursos revisados à mão. Nenhum link é patrocinado ou de afiliado, e
+    o site não usa rastreamento nem cookies.
+  </p>
+  <p>Os preços e planos mudam: confira no próprio site antes de assinar qualquer coisa.</p>
+</footer>
+
+<style>
+  .site-footer {
+    display: grid;
+    gap: var(--space-2);
+    margin-top: var(--space-8);
+    padding-block: var(--space-6);
+    border-top: 1px solid var(--rule);
+    color: var(--ink-2);
+    font-size: var(--type-data);
+  }
+  p {
+    max-width: var(--measure);
+  }
+</style>

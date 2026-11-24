@@ -1,0 +1,615 @@
+{
+  "categories": [
+    {
+      "id": "ambiente",
+      "headword": "surround",
+      "ipa": "/səˈraʊnd/",
+      "title": "Montar o ambiente",
+      "summary": "Ferramentas que colocam inglês no que você já usa: o navegador, a Netflix, o YouTube e o rádio."
+    },
+    {
+      "id": "ouvir",
+      "headword": "listen",
+      "ipa": "/ˈlɪs.ən/",
+      "title": "Ouvir",
+      "summary": "Podcasts para o trajeto, a academia e a louça. Comece pelos feitos para quem aprende e passe para os de nativos."
+    },
+    {
+      "id": "assistir",
+      "headword": "watch",
+      "ipa": "/wɒtʃ/",
+      "title": "Assistir",
+      "summary": "Vídeos com imagem que ajuda a entender o áudio. Use legenda em inglês, nunca em português."
+    },
+    {
+      "id": "ler",
+      "headword": "read",
+      "ipa": "/riːd/",
+      "title": "Ler",
+      "summary": "Textos graduados por nível, notícias simplificadas e, depois, livros e jornais sem adaptação."
+    },
+    {
+      "id": "falar",
+      "headword": "speak",
+      "ipa": "/spiːk/",
+      "title": "Falar",
+      "summary": "Conversa com pessoas de verdade: troca de idiomas gratuita, salas de voz abertas e aulas com professores."
+    },
+    {
+      "id": "escrever",
+      "headword": "write",
+      "ipa": "/raɪt/",
+      "title": "Escrever",
+      "summary": "Diário em inglês corrigido por nativos e verificadores que explicam o erro em vez de só trocar a palavra."
+    },
+    {
+      "id": "pronuncia",
+      "headword": "pronounce",
+      "ipa": "/prəˈnaʊns/",
+      "title": "Pronúncia",
+      "summary": "Ouça como uma palavra soa em contexto real, compare sotaques e treine os sons que o português não tem."
+    },
+    {
+      "id": "vocabulario",
+      "headword": "remember",
+      "ipa": "/rɪˈmem.bər/",
+      "title": "Vocabulário e revisão",
+      "summary": "Dicionários para aprendizes, com definição em inglês simples, e repetição espaçada para não esquecer."
+    },
+    {
+      "id": "cursos",
+      "headword": "study",
+      "ipa": "/ˈstʌd.i/",
+      "title": "Estudo guiado",
+      "summary": "Cursos com sequência de lições, para quem quer uma trilha de gramática ao lado da imersão."
+    },
+    {
+      "id": "nivel",
+      "headword": "measure",
+      "ipa": "/ˈmeʒ.ər/",
+      "title": "Medir o nível",
+      "summary": "Testes gratuitos que dão um nível no Quadro Europeu (A1 a C2). Refaça a cada três meses."
+    }
+  ],
+  "resources": [
+    {
+      "id": "language-reactor",
+      "name": "Language Reactor",
+      "url": "https://www.languagereactor.com/",
+      "category": "ambiente",
+      "format": "Extensão",
+      "summary": "Legenda dupla na Netflix e no YouTube, dicionário ao clicar numa palavra e pausa automática ao fim de cada fala.",
+      "from": "A2",
+      "to": "C2",
+      "cost": "freemium"
+    },
+    {
+      "id": "readlang",
+      "name": "Readlang",
+      "url": "https://readlang.com/",
+      "category": "ambiente",
+      "format": "Extensão",
+      "summary": "Traduz palavras e frases em qualquer site com um clique e transforma o que você consultou em cartões de revisão.",
+      "from": "A2",
+      "to": "C1",
+      "cost": "freemium"
+    },
+    {
+      "id": "toucan",
+      "name": "Toucan",
+      "url": "https://jointoucan.com/",
+      "category": "ambiente",
+      "format": "Extensão",
+      "summary": "Troca algumas palavras dos sites que você lê em português pela versão em inglês, para aprender sem mudar de rotina.",
+      "from": "A1",
+      "to": "B1",
+      "cost": "freemium"
+    },
+    {
+      "id": "radio-garden",
+      "name": "Radio Garden",
+      "url": "https://radio.garden/",
+      "category": "ambiente",
+      "format": "Site e app",
+      "summary": "Rádios ao vivo do mundo inteiro num globo. Gire até Londres, Dublin, Toronto ou Sydney e deixe tocando.",
+      "from": "B1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "6-minute-english",
+      "name": "6 Minute English",
+      "url": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english",
+      "category": "ouvir",
+      "format": "Podcast",
+      "summary": "Dois apresentadores da BBC conversam seis minutos sobre um tema atual e explicam o vocabulário. Tem transcrição.",
+      "from": "A2",
+      "to": "B2",
+      "cost": "free"
+    },
+    {
+      "id": "voa-learning-english",
+      "name": "VOA Learning English",
+      "url": "https://learningenglish.voanews.com/",
+      "category": "ouvir",
+      "format": "Áudio e vídeo",
+      "summary": "Notícias lidas devagar, com vocabulário limitado e texto completo ao lado. Um dos poucos materiais bons para iniciantes.",
+      "from": "A1",
+      "to": "B1",
+      "cost": "free"
+    },
+    {
+      "id": "easy-stories",
+      "name": "Easy Stories in English",
+      "url": "https://easystoriesinenglish.com/",
+      "category": "ouvir",
+      "format": "Podcast",
+      "summary": "Contos e fábulas narrados em níveis de dificuldade, do iniciante ao avançado.",
+      "from": "A1",
+      "to": "B2",
+      "cost": "freemium"
+    },
+    {
+      "id": "the-english-we-speak",
+      "name": "The English We Speak",
+      "url": "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak",
+      "category": "ouvir",
+      "format": "Podcast",
+      "summary": "Episódios de três minutos, cada um sobre uma expressão do inglês falado no dia a dia.",
+      "from": "B1",
+      "to": "C1",
+      "cost": "free"
+    },
+    {
+      "id": "lukes-english-podcast",
+      "name": "Luke’s English Podcast",
+      "url": "https://teacherluke.co.uk/",
+      "category": "ouvir",
+      "format": "Podcast",
+      "summary": "Um professor britânico fala longamente sobre cultura, humor e língua. Bom para ganhar resistência a episódios de uma hora.",
+      "from": "B1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "all-ears-english",
+      "name": "All Ears English",
+      "url": "https://www.allearsenglish.com/",
+      "category": "ouvir",
+      "format": "Podcast",
+      "summary": "Episódios curtos sobre como americanos falam em situações reais: trabalho, conversa casual, entrevistas.",
+      "from": "B1",
+      "to": "C1",
+      "cost": "free"
+    },
+    {
+      "id": "this-american-life",
+      "name": "This American Life",
+      "url": "https://www.thisamericanlife.org/",
+      "category": "ouvir",
+      "format": "Podcast",
+      "summary": "Histórias reais contadas por jornalistas americanos, com transcrição de cada episódio. Sem adaptação para aprendizes.",
+      "from": "C1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "peppa-pig",
+      "name": "Peppa Pig Official",
+      "url": "https://www.youtube.com/@PeppaPigOfficial",
+      "category": "assistir",
+      "format": "YouTube",
+      "summary": "Desenho infantil britânico com frases curtas, fala clara e situações domésticas. Funciona para adultos no começo.",
+      "from": "A1",
+      "to": "A2",
+      "cost": "free"
+    },
+    {
+      "id": "easy-english",
+      "name": "Easy English",
+      "url": "https://www.youtube.com/@EasyEnglishVideos",
+      "category": "assistir",
+      "format": "YouTube",
+      "summary": "Entrevistas na rua com pessoas comuns, com legenda em inglês na tela. Mostra o sotaque e o ritmo reais.",
+      "from": "B1",
+      "to": "C1",
+      "cost": "free"
+    },
+    {
+      "id": "english-with-lucy",
+      "name": "English with Lucy",
+      "url": "https://www.youtube.com/@EnglishwithLucy",
+      "category": "assistir",
+      "format": "YouTube",
+      "summary": "Aulas sobre vocabulário, pronúncia britânica e erros comuns, explicadas inteiramente em inglês.",
+      "from": "A2",
+      "to": "B2",
+      "cost": "free"
+    },
+    {
+      "id": "cnn10",
+      "name": "CNN 10",
+      "url": "https://edition.cnn.com/cnn10",
+      "category": "assistir",
+      "format": "Vídeo",
+      "summary": "Dez minutos de notícias por dia, feitos para estudantes do ensino médio americano. Fala rápida, mas com contexto.",
+      "from": "B1",
+      "to": "C1",
+      "cost": "free"
+    },
+    {
+      "id": "ted",
+      "name": "TED",
+      "url": "https://www.ted.com/talks",
+      "category": "assistir",
+      "format": "Vídeo",
+      "summary": "Palestras curtas sobre quase tudo, com legenda e transcrição interativa em inglês. Filtre pelo tema que você já conhece.",
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "kurzgesagt",
+      "name": "Kurzgesagt",
+      "url": "https://www.youtube.com/@kurzgesagt",
+      "category": "assistir",
+      "format": "YouTube",
+      "summary": "Ciência explicada com animação. A imagem carrega boa parte do sentido, o que ajuda a acompanhar a narração densa.",
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "news-in-levels",
+      "name": "News in Levels",
+      "url": "https://www.newsinlevels.com/",
+      "category": "ler",
+      "format": "Site",
+      "summary": "A mesma notícia escrita em três níveis, com áudio. Leia o nível 1 e suba quando ficar fácil.",
+      "from": "A1",
+      "to": "B2",
+      "cost": "free"
+    },
+    {
+      "id": "breaking-news-english",
+      "name": "Breaking News English",
+      "url": "https://breakingnewsenglish.com/",
+      "category": "ler",
+      "format": "Site",
+      "summary": "Notícias em sete níveis de dificuldade, cada uma com áudio, exercícios e versão em ritmo lento.",
+      "from": "A1",
+      "to": "C1",
+      "cost": "free"
+    },
+    {
+      "id": "simple-wikipedia",
+      "name": "Simple English Wikipedia",
+      "url": "https://simple.wikipedia.org/",
+      "category": "ler",
+      "format": "Site",
+      "summary": "A Wikipédia escrita com vocabulário básico e frases curtas. Procure um assunto que você domina em português.",
+      "from": "A2",
+      "to": "B2",
+      "cost": "free"
+    },
+    {
+      "id": "lingq",
+      "name": "LingQ",
+      "url": "https://www.lingq.com/",
+      "category": "ler",
+      "format": "App",
+      "summary": "Biblioteca de textos com áudio que marca as palavras que você ainda não conhece e conta quantas já aprendeu.",
+      "from": "A1",
+      "to": "C2",
+      "cost": "freemium"
+    },
+    {
+      "id": "penguin-readers",
+      "name": "Penguin Readers",
+      "url": "https://www.penguinreaders.co.uk/",
+      "category": "ler",
+      "format": "Livros",
+      "summary": "Romances e clássicos reescritos por nível do Quadro Europeu. O formato mais antigo de leitura graduada.",
+      "from": "A1",
+      "to": "C1",
+      "cost": "paid"
+    },
+    {
+      "id": "standard-ebooks",
+      "name": "Standard Ebooks",
+      "url": "https://standardebooks.org/",
+      "category": "ler",
+      "format": "E-books",
+      "summary": "Livros em domínio público com edição e tipografia cuidadosas, prontos para o Kindle ou qualquer leitor.",
+      "from": "C1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "the-guardian",
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/international",
+      "category": "ler",
+      "format": "Jornal",
+      "summary": "Jornal britânico aberto, sem paywall. Leia a seção do assunto que você acompanha no Brasil.",
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "tandem",
+      "name": "Tandem",
+      "url": "https://www.tandem.net/",
+      "category": "falar",
+      "format": "App",
+      "summary": "Troca de idiomas: você ajuda alguém com português e a pessoa ajuda você com inglês, por texto, áudio ou vídeo.",
+      "from": "A2",
+      "to": "C2",
+      "cost": "freemium"
+    },
+    {
+      "id": "hellotalk",
+      "name": "HelloTalk",
+      "url": "https://www.hellotalk.com/",
+      "category": "falar",
+      "format": "App",
+      "summary": "Troca de idiomas em formato de chat, com correção de frases embutida e salas de voz em grupo.",
+      "from": "A2",
+      "to": "C2",
+      "cost": "freemium"
+    },
+    {
+      "id": "conversation-exchange",
+      "name": "Conversation Exchange",
+      "url": "https://www.conversationexchange.com/",
+      "category": "falar",
+      "format": "Site",
+      "summary": "Diretório antigo e gratuito de parceiros para troca de idiomas, por chamada de vídeo, e-mail ou presencial.",
+      "from": "A2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "free4talk",
+      "name": "Free4Talk",
+      "url": "https://www.free4talk.com/",
+      "category": "falar",
+      "format": "Site",
+      "summary": "Salas de voz abertas por tema e nível. Entre, ouça primeiro e fale quando se sentir pronto.",
+      "from": "B1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "italki",
+      "name": "italki",
+      "url": "https://www.italki.com/",
+      "category": "falar",
+      "format": "Aulas",
+      "summary": "Professores e tutores de conversação que cobram por aula. Os preços variam muito; compare antes de fechar pacote.",
+      "from": "A1",
+      "to": "C2",
+      "cost": "paid"
+    },
+    {
+      "id": "preply",
+      "name": "Preply",
+      "url": "https://preply.com/",
+      "category": "falar",
+      "format": "Aulas",
+      "summary": "Marketplace de professores com aula experimental. Bom para combinar um horário fixo semanal.",
+      "from": "A1",
+      "to": "C2",
+      "cost": "paid"
+    },
+    {
+      "id": "cambly",
+      "name": "Cambly",
+      "url": "https://www.cambly.com/",
+      "category": "falar",
+      "format": "Aulas",
+      "summary": "Conversa com falantes nativos sem marcar horário, por assinatura. Mais conversa livre do que aula estruturada.",
+      "from": "A2",
+      "to": "C2",
+      "cost": "paid"
+    },
+    {
+      "id": "langcorrect",
+      "name": "LangCorrect",
+      "url": "https://langcorrect.com/",
+      "category": "escrever",
+      "format": "Site",
+      "summary": "Publique um texto curto em inglês e falantes nativos corrigem frase a frase. Corrija textos em português para ganhar pontos.",
+      "from": "A2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "write-and-improve",
+      "name": "Write & Improve",
+      "url": "https://writeandimprove.com/",
+      "category": "escrever",
+      "format": "Site",
+      "summary": "Ferramenta da Cambridge que avalia redações, aponta onde estão os problemas e estima o nível do texto.",
+      "from": "A1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "writestreak",
+      "name": "r/WriteStreakEN",
+      "url": "https://www.reddit.com/r/WriteStreakEN/",
+      "category": "escrever",
+      "format": "Comunidade",
+      "summary": "Comunidade em que cada pessoa posta um texto por dia e falantes nativos corrigem. Bom para criar o hábito.",
+      "from": "B1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "languagetool",
+      "name": "LanguageTool",
+      "url": "https://languagetool.org/",
+      "category": "escrever",
+      "format": "Extensão",
+      "summary": "Corretor de gramática e estilo que funciona no navegador e explica cada sugestão.",
+      "from": "B1",
+      "to": "C2",
+      "cost": "freemium"
+    },
+    {
+      "id": "youglish",
+      "name": "YouGlish",
+      "url": "https://youglish.com/",
+      "category": "pronuncia",
+      "format": "Site",
+      "summary": "Digite uma palavra e veja trechos de vídeos reais em que alguém a diz, com filtro por sotaque americano, britânico ou australiano.",
+      "from": "A2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "rachels-english",
+      "name": "Rachel’s English",
+      "url": "https://rachelsenglish.com/",
+      "category": "pronuncia",
+      "format": "Vídeo",
+      "summary": "Pronúncia do inglês americano em detalhe: posição da boca, redução de sílabas e entonação.",
+      "from": "A2",
+      "to": "C2",
+      "cost": "freemium"
+    },
+    {
+      "id": "forvo",
+      "name": "Forvo",
+      "url": "https://forvo.com/languages/en/",
+      "category": "pronuncia",
+      "format": "Site",
+      "summary": "Gravações de pronúncia feitas por falantes nativos de vários países, inclusive para nomes próprios.",
+      "from": "A1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "elsa-speak",
+      "name": "ELSA Speak",
+      "url": "https://elsaspeak.com/",
+      "category": "pronuncia",
+      "format": "App",
+      "summary": "Você fala, o app reconhece o som e mostra em qual fonema errou. Útil para o th, o r e as vogais longas.",
+      "from": "A1",
+      "to": "C1",
+      "cost": "freemium"
+    },
+    {
+      "id": "cambridge-dictionary",
+      "name": "Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/",
+      "category": "vocabulario",
+      "format": "Dicionário",
+      "summary": "Definições para aprendizes com nível de cada palavra, transcrição fonética e áudio britânico e americano.",
+      "from": "A1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "longman",
+      "name": "Longman Dictionary",
+      "url": "https://www.ldoceonline.com/",
+      "category": "vocabulario",
+      "format": "Dicionário",
+      "summary": "Definições escritas com um vocabulário controlado de cerca de duas mil palavras e muitos exemplos.",
+      "from": "A2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "anki",
+      "name": "Anki",
+      "url": "https://apps.ankiweb.net/",
+      "category": "vocabulario",
+      "format": "App",
+      "summary": "Cartões com repetição espaçada. Grátis no computador, na web e no Android; o app de iPhone é pago.",
+      "from": "A1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "vocabulary-com",
+      "name": "Vocabulary.com",
+      "url": "https://www.vocabulary.com/",
+      "category": "vocabulario",
+      "format": "Site",
+      "summary": "Explicações de palavras em linguagem de conversa e exercícios que se adaptam ao que você erra.",
+      "from": "B2",
+      "to": "C2",
+      "cost": "freemium"
+    },
+    {
+      "id": "bbc-learning-english",
+      "name": "BBC Learning English",
+      "url": "https://www.bbc.co.uk/learningenglish/",
+      "category": "cursos",
+      "format": "Site",
+      "summary": "Cursos completos do básico ao avançado, com gramática, vocabulário e pronúncia, todos com áudio e transcrição.",
+      "from": "A1",
+      "to": "C1",
+      "cost": "free"
+    },
+    {
+      "id": "british-council-learnenglish",
+      "name": "LearnEnglish",
+      "url": "https://learnenglish.britishcouncil.org/",
+      "category": "cursos",
+      "format": "Site",
+      "summary": "Lições do British Council organizadas por nível e habilidade, com explicações de gramática e exercícios.",
+      "from": "A1",
+      "to": "C1",
+      "cost": "freemium"
+    },
+    {
+      "id": "usa-learns",
+      "name": "USA Learns",
+      "url": "https://www.usalearns.org/",
+      "category": "cursos",
+      "format": "Site",
+      "summary": "Curso em vídeo com situações do cotidiano americano, feito para adultos que estão começando.",
+      "from": "A1",
+      "to": "B1",
+      "cost": "free"
+    },
+    {
+      "id": "duolingo",
+      "name": "Duolingo",
+      "url": "https://www.duolingo.com/",
+      "category": "cursos",
+      "format": "App",
+      "summary": "Lições curtas e diárias. Ajuda a criar o hábito no começo, mas sozinho não leva à conversa.",
+      "from": "A1",
+      "to": "B1",
+      "cost": "freemium"
+    },
+    {
+      "id": "ef-set",
+      "name": "EF SET",
+      "url": "https://www.efset.org/",
+      "category": "nivel",
+      "format": "Teste",
+      "summary": "Teste de leitura e audição de 50 minutos com resultado no Quadro Europeu e certificado gratuito.",
+      "from": "A1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "cambridge-test",
+      "name": "Cambridge Test Your English",
+      "url": "https://www.cambridgeenglish.org/test-your-english/",
+      "category": "nivel",
+      "format": "Teste",
+      "summary": "Teste rápido da Cambridge que sugere seu nível e o exame adequado para ele.",
+      "from": "A1",
+      "to": "C2",
+      "cost": "free"
+    }
+  ]
+}
