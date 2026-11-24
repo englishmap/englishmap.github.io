@@ -11,3 +11,6 @@ SPEC.local.md
 # Local agent config (not versioned)
 CLAUDE.md
 .claude/
+
+# High-resolution logo source (the versioned copy is docs/brand/logo.webp)
+/Gemini_Generated_Image_*.jpg

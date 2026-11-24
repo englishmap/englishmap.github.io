@@ -1,8 +1,15 @@
-# englishmap
+<p align="center">
+  <img src="docs/brand/logo.webp" alt="englishmap" width="480">
+</p>
+
+<p align="center">
+  Recursos para aprender inglês online como numa imersão, por nível e custo.<br>
+  <a href="https://englishmap.github.io/"><strong>englishmap.github.io</strong></a>
+</p>
+
+---
 
 Um diretório de recursos para aprender inglês online como numa imersão: o que ouvir, assistir, ler, falar e escrever todos os dias, separado por nível (A1 a C2) e custo. Inspirado no [NewsMapp](https://github.com/newsmapp/newsmapp.github.io).
-
-Site: https://englishmap.github.io/
 
 O site é estático, gratuito, sem anúncios, links de afiliado ou rastreamento.
 
