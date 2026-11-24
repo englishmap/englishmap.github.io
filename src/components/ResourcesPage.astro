@@ -107,7 +107,7 @@ const counts = { one: t.count(1), many: t.count(2).replace('2', '{n}'), zero: t.
           summary: d.summary!,
           from: d.from as Level,
           to: d.to as Level,
-          cost: d.cost as Cost,
+          cost: (d.cost || undefined) as Cost | undefined,
         },
         s,
       );

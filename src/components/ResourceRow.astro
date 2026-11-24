@@ -17,7 +17,7 @@ const summary = r.summary[lang];
   class="resource"
   data-from={r.from}
   data-to={r.to}
-  data-cost={r.cost}
+  data-cost={r.cost ?? ''}
   data-name={r.name}
   data-summary={summary}
 >
@@ -38,12 +38,14 @@ const summary = r.summary[lang];
         <LevelStrip from={r.from} to={r.to} lang={lang} />
       </dd>
     </div>
-    <div>
-      <dt class="sr-only">{t.cost}</dt>
-      <dd class:list={['cost', r.cost]} title={COST_TITLE[lang][r.cost]}>
-        {COST_LABEL[lang][r.cost]}
-      </dd>
-    </div>
+    {r.cost && (
+      <div>
+        <dt class="sr-only">{t.cost}</dt>
+        <dd class:list={['cost', r.cost]} title={COST_TITLE[lang][r.cost]}>
+          {COST_LABEL[lang][r.cost]}
+        </dd>
+      </div>
+    )}
   </dl>
 </li>
 

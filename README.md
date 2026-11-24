@@ -15,8 +15,8 @@ The site is available in Brazilian Portuguese (`/`) and English (`/en/`). It is 
 
 ## Features
 
-- 91 resources in 13 categories: setting up your surroundings, listening, watching, TV series, reading, speaking, writing, pronunciation, vocabulary, English for work, tech podcasts (programming, security and AI), guided study and level tests.
-- Each resource shows its format, CEFR level range and whether it is free, freemium or paid, so you can decide before clicking.
+- 122 resources in 13 categories: setting up your surroundings, listening, watching, TV series, reading, speaking, writing, pronunciation, vocabulary, English for work, tech podcasts (programming, security and AI), guided study and level tests.
+- Each resource shows its format, CEFR level range and whether it is free, freemium or paid, so you can decide before clicking. TV series show no cost, since that depends on your streaming plan.
 - Filters by level, cost and text. They are kept in the URL, so you can share a filtered list.
 - An immersion guide covering comprehensible input, how to switch your devices and media to English, what to use at each stage, and a sample day with about two hours of English.
 - A study abroad page with the four cheapest English-speaking destinations for a language course (the Philippines, Malta, South Africa and Ireland). Entry and work rules for Brazilian passport holders come from official sources.
@@ -51,7 +51,7 @@ docs/               Design brief, decisions (ADRs) and brand files (docs/brand/R
 
 ## Adding a resource
 
-Add an object to `data/catalog.json` with `id`, `name`, `url` (https), `category`, `format` (one of the keys in `src/schemas/catalog.ts`), `summary` with `pt` and `en` texts (up to 200 characters each), `from` and `to` (CEFR levels) and `cost` (`free`, `freemium` or `paid`), then run `pnpm check`.
+Add an object to `data/catalog.json` with `id`, `name`, `url` (https), `category`, `format` (one of the keys in `src/schemas/catalog.ts`), `summary` with `pt` and `en` texts (up to 200 characters each), `from` and `to` (CEFR levels) and `cost` (`free`, `freemium` or `paid`; leave it out for TV series), then run `pnpm check`.
 
 A resource gets listed if it is useful to someone studying alone at home, it is online, and its level and cost have been checked on its own site. Sponsored entries are not accepted.
 

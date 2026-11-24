@@ -33,3 +33,10 @@ describe('url state', () => {
     expect(readState(new URLSearchParams('nivel=z9&custo=cheap'))).toEqual(none);
   });
 });
+
+describe('resources without a cost', () => {
+  const show: Filterable = { name: 'Friends', summary: 'Sitcom', from: 'B1', to: 'B2' };
+  it('show up when no cost filter is set', () => expect(matches(show, none)).toBe(true));
+  it('are left out by any cost filter', () =>
+    expect(matches(show, { ...none, cost: 'free' })).toBe(false));
+});

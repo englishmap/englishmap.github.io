@@ -49,7 +49,8 @@ export const resourceSchema = z
     summary: localized(20, 200),
     from: levelSchema,
     to: levelSchema,
-    cost: costSchema,
+    /** Omitted where a price makes no sense, such as a TV series that depends on the viewer's streaming plan. */
+    cost: costSchema.optional(),
   })
   .refine((r) => LEVELS.indexOf(r.from) <= LEVELS.indexOf(r.to), {
     message: '"from" must not be above "to"',

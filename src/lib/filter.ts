@@ -11,7 +11,7 @@ export interface Filterable {
   summary: string;
   from: Level;
   to: Level;
-  cost: Cost;
+  cost?: Cost | undefined;
 }
 
 export function normalize(s: string): string {

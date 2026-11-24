@@ -410,6 +410,48 @@
       "cost": "free"
     },
     {
+      "id": "99-percent-invisible",
+      "name": "99% Invisible",
+      "url": "https://99percentinvisible.org/",
+      "category": "ouvir",
+      "format": "podcast",
+      "summary": {
+        "pt": "Histórias sobre o design de coisas que ninguém repara: placas, prédios, cadeiras. Narração calma e bem produzida.",
+        "en": "Stories about the design of things nobody notices: signs, buildings, chairs. Calm, well-produced narration."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "global-news-podcast",
+      "name": "Global News Podcast",
+      "url": "https://www.bbc.co.uk/programmes/p02nq0gn",
+      "category": "ouvir",
+      "format": "podcast",
+      "summary": {
+        "pt": "As notícias do mundo pela BBC, duas vezes por dia, com correspondentes de vários sotaques.",
+        "en": "World news from the BBC twice a day, with correspondents from many accents."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "stuff-you-should-know",
+      "name": "Stuff You Should Know",
+      "url": "https://www.iheart.com/podcast/105-stuff-you-should-know-26940277/",
+      "category": "ouvir",
+      "format": "podcast",
+      "summary": {
+        "pt": "Dois amigos explicam um assunto por episódio, de café a buracos negros, em tom de conversa.",
+        "en": "Two friends explain one topic per episode, from coffee to black holes, in a conversational tone."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
       "id": "peppa-pig",
       "name": "Peppa Pig Official",
       "url": "https://www.youtube.com/@PeppaPigOfficial",
@@ -592,6 +634,34 @@
       "cost": "free"
     },
     {
+      "id": "crash-course",
+      "name": "Crash Course",
+      "url": "https://www.youtube.com/@crashcourse",
+      "category": "assistir",
+      "format": "youtube",
+      "summary": {
+        "pt": "Cursos em vídeo de dez minutos sobre história, ciência e economia, falados rápido mas com roteiro claro.",
+        "en": "Ten-minute video courses on history, science and economics, spoken fast but with a clear script."
+      },
+      "from": "B2",
+      "to": "C1",
+      "cost": "free"
+    },
+    {
+      "id": "mark-rober",
+      "name": "Mark Rober",
+      "url": "https://www.youtube.com/@MarkRober",
+      "category": "assistir",
+      "format": "youtube",
+      "summary": {
+        "pt": "Um ex-engenheiro da NASA constrói invenções e explica a engenharia por trás. A imagem ajuda muito a acompanhar.",
+        "en": "A former NASA engineer builds inventions and explains the engineering behind them. The visuals help a lot."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
       "id": "bluey",
       "name": "Bluey",
       "url": "https://www.imdb.com/title/tt7678620/",
@@ -602,8 +672,7 @@
         "en": "An Australian cartoon with seven-minute episodes, short sentences and family situations. An easy way to get used to the Australian accent."
       },
       "from": "A1",
-      "to": "A2",
-      "cost": "paid"
+      "to": "A2"
     },
     {
       "id": "friends",
@@ -616,8 +685,7 @@
         "en": "A sitcom many learners use. The dialogue is everyday, the jokes come back, and the American English is clear."
       },
       "from": "B1",
-      "to": "B2",
-      "cost": "paid"
+      "to": "B2"
     },
     {
       "id": "modern-family",
@@ -630,8 +698,7 @@
         "en": "Three families in short episodes, with conversations at home, school and work at a moderate pace."
       },
       "from": "B1",
-      "to": "B2",
-      "cost": "paid"
+      "to": "B2"
     },
     {
       "id": "brooklyn-nine-nine",
@@ -644,8 +711,7 @@
         "en": "A comedy set in a New York police precinct, with plenty of slang and quick humour."
       },
       "from": "B2",
-      "to": "C1",
-      "cost": "paid"
+      "to": "C1"
     },
     {
       "id": "the-office",
@@ -658,8 +724,7 @@
         "en": "Daily life in an American office, with the English of meetings, emails and small talk with colleagues."
       },
       "from": "B2",
-      "to": "C1",
-      "cost": "paid"
+      "to": "C1"
     },
     {
       "id": "ted-lasso",
@@ -672,8 +737,7 @@
         "en": "An American coach at an English club: you can compare American and British English in the same scene."
       },
       "from": "B2",
-      "to": "C1",
-      "cost": "paid"
+      "to": "C1"
     },
     {
       "id": "the-crown",
@@ -686,8 +750,7 @@
         "en": "A historical drama with formal, well-articulated British English, easier to follow than it looks."
       },
       "from": "B2",
-      "to": "C2",
-      "cost": "paid"
+      "to": "C2"
     },
     {
       "id": "sherlock",
@@ -700,8 +763,7 @@
         "en": "Very fast British dialogue and a wide vocabulary. Save it for when you are advanced."
       },
       "from": "C1",
-      "to": "C2",
-      "cost": "paid"
+      "to": "C2"
     },
     {
       "id": "lingopie",
@@ -716,6 +778,149 @@
       "from": "A2",
       "to": "C1",
       "cost": "paid"
+    },
+    {
+      "id": "abbott-elementary",
+      "name": "Abbott Elementary",
+      "url": "https://www.imdb.com/title/tt14218830/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "Comédia em formato de documentário numa escola pública da Filadélfia. Episódios de vinte minutos com fala clara.",
+        "en": "A mockumentary comedy set in a Philadelphia public school. Twenty-minute episodes with clear speech."
+      },
+      "from": "B1",
+      "to": "B2"
+    },
+    {
+      "id": "how-i-met-your-mother",
+      "name": "How I Met Your Mother",
+      "url": "https://www.imdb.com/title/tt0460649/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "Um grupo de amigos em Nova York, contado em flashback. Muito vocabulário de encontros, trabalho e vida adulta.",
+        "en": "A group of friends in New York, told in flashback. Plenty of vocabulary about dating, work and adult life."
+      },
+      "from": "B1",
+      "to": "B2"
+    },
+    {
+      "id": "young-sheldon",
+      "name": "Young Sheldon",
+      "url": "https://www.imdb.com/title/tt6226232/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "Família no interior do Texas nos anos 1980, com narração em off que explica o que está acontecendo.",
+        "en": "A family in small-town Texas in the 1980s, with a voice-over that explains what is going on."
+      },
+      "from": "B1",
+      "to": "B2"
+    },
+    {
+      "id": "the-good-place",
+      "name": "The Good Place",
+      "url": "https://www.imdb.com/title/tt4955642/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "Comédia sobre o que acontece depois da morte, com diálogos rápidos e um pouco de vocabulário de filosofia.",
+        "en": "A comedy about what happens after death, with quick dialogue and a bit of philosophy vocabulary."
+      },
+      "from": "B2",
+      "to": "C1"
+    },
+    {
+      "id": "the-big-bang-theory",
+      "name": "The Big Bang Theory",
+      "url": "https://www.imdb.com/title/tt0898266/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "Cientistas e vizinhos em Pasadena. As piadas dependem de vocabulário técnico, o que dá um bom teste de compreensão.",
+        "en": "Scientists and their neighbours in Pasadena. The jokes lean on technical vocabulary, which makes a good comprehension test."
+      },
+      "from": "B2",
+      "to": "C1"
+    },
+    {
+      "id": "stranger-things",
+      "name": "Stranger Things",
+      "url": "https://www.imdb.com/title/tt4574334/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "Mistério nos anos 1980 com um elenco jovem. Gírias da época e muito diálogo em situações de tensão.",
+        "en": "A 1980s mystery with a young cast. Slang from the era and plenty of dialogue in tense scenes."
+      },
+      "from": "B2",
+      "to": "C1"
+    },
+    {
+      "id": "suits",
+      "name": "Suits",
+      "url": "https://www.imdb.com/title/tt1632701/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "Advogados de um escritório de Nova York. Bom para o inglês de negociação e de ambiente corporativo.",
+        "en": "Lawyers at a New York firm. Good for the English of negotiation and corporate settings."
+      },
+      "from": "B2",
+      "to": "C2"
+    },
+    {
+      "id": "downton-abbey",
+      "name": "Downton Abbey",
+      "url": "https://www.imdb.com/title/tt1606375/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "Uma família aristocrata e seus empregados no início do século 20. Mostra como o sotaque muda com a classe social.",
+        "en": "An aristocratic family and their servants in the early 20th century. Shows how accent changes with social class."
+      },
+      "from": "B2",
+      "to": "C2"
+    },
+    {
+      "id": "gilmore-girls",
+      "name": "Gilmore Girls",
+      "url": "https://www.imdb.com/title/tt0238784/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "Mãe e filha que falam muito rápido e cheio de referências culturais. Uma das séries mais difíceis de acompanhar sem legenda.",
+        "en": "A mother and daughter who talk very fast and are full of cultural references. One of the hardest series to follow without subtitles."
+      },
+      "from": "C1",
+      "to": "C2"
+    },
+    {
+      "id": "derry-girls",
+      "name": "Derry Girls",
+      "url": "https://www.imdb.com/title/tt7120662/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "Adolescentes na Irlanda do Norte nos anos 1990, com sotaque forte e gírias locais. Para quem quer sair do inglês americano.",
+        "en": "Teenagers in Northern Ireland in the 1990s, with a strong accent and local slang. For when you want a break from American English."
+      },
+      "from": "C1",
+      "to": "C2"
+    },
+    {
+      "id": "peaky-blinders",
+      "name": "Peaky Blinders",
+      "url": "https://www.imdb.com/title/tt2442560/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "Gangue em Birmingham depois da Primeira Guerra, com sotaque do interior da Inglaterra difícil até para britânicos.",
+        "en": "A Birmingham gang after the First World War, with a regional English accent that challenges even British viewers."
+      },
+      "from": "C1",
+      "to": "C2"
     },
     {
       "id": "news-in-levels",
@@ -810,6 +1015,62 @@
       "summary": {
         "pt": "Jornal britânico aberto, sem paywall. Leia a seção do assunto que você acompanha no Brasil.",
         "en": "An open British newspaper with no paywall. Read the section on a subject you already follow at home."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "english-e-reader",
+      "name": "English e-Reader",
+      "url": "https://english-e-reader.net/",
+      "category": "ler",
+      "format": "ebooks",
+      "summary": {
+        "pt": "Livros graduados por nível para baixar de graça, muitos com audiolivro junto.",
+        "en": "Graded books by level to download for free, many with a matching audiobook."
+      },
+      "from": "A1",
+      "to": "C1",
+      "cost": "free"
+    },
+    {
+      "id": "readtheory",
+      "name": "ReadTheory",
+      "url": "https://readtheory.org/",
+      "category": "ler",
+      "format": "site",
+      "summary": {
+        "pt": "Textos curtos com perguntas de compreensão que ficam mais difíceis conforme você acerta.",
+        "en": "Short texts with comprehension questions that get harder as you answer correctly."
+      },
+      "from": "A2",
+      "to": "C1",
+      "cost": "free"
+    },
+    {
+      "id": "project-gutenberg",
+      "name": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/",
+      "category": "ler",
+      "format": "ebooks",
+      "summary": {
+        "pt": "Mais de 70 mil livros em domínio público para ler online ou baixar.",
+        "en": "More than 70,000 public domain books to read online or download."
+      },
+      "from": "C1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "the-conversation",
+      "name": "The Conversation",
+      "url": "https://theconversation.com/global",
+      "category": "ler",
+      "format": "site",
+      "summary": {
+        "pt": "Artigos curtos escritos por pesquisadores para o público geral, sobre ciência, saúde e política.",
+        "en": "Short articles written by researchers for a general audience, on science, health and politics."
       },
       "from": "B2",
       "to": "C2",
@@ -942,6 +1203,34 @@
       "cost": "freemium"
     },
     {
+      "id": "toastmasters",
+      "name": "Toastmasters",
+      "url": "https://www.toastmasters.org/",
+      "category": "falar",
+      "format": "community",
+      "summary": {
+        "pt": "Clubes de oratória com encontros presenciais e online. Você treina discursos curtos e recebe avaliação dos colegas.",
+        "en": "Public speaking clubs that meet in person and online. You practise short speeches and get feedback from members."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "paid"
+    },
+    {
+      "id": "meetup",
+      "name": "Meetup",
+      "url": "https://www.meetup.com/",
+      "category": "falar",
+      "format": "community",
+      "summary": {
+        "pt": "Procure por \"English conversation\" para achar grupos de conversa online ou na sua cidade.",
+        "en": "Search for \"English conversation\" to find online or local conversation groups."
+      },
+      "from": "B1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
       "id": "langcorrect",
       "name": "LangCorrect",
       "url": "https://langcorrect.com/",
@@ -1068,6 +1357,20 @@
       "cost": "freemium"
     },
     {
+      "id": "speechling",
+      "name": "Speechling",
+      "url": "https://speechling.com/",
+      "category": "pronuncia",
+      "format": "site",
+      "summary": {
+        "pt": "Você grava frases e um professor humano devolve correções da sua pronúncia.",
+        "en": "You record sentences and a human coach sends back corrections on your pronunciation."
+      },
+      "from": "A2",
+      "to": "C1",
+      "cost": "freemium"
+    },
+    {
       "id": "cambridge-dictionary",
       "name": "Cambridge Dictionary",
       "url": "https://dictionary.cambridge.org/",
@@ -1138,6 +1441,34 @@
       "cost": "freemium"
     },
     {
+      "id": "oxford-learners",
+      "name": "Oxford Learner’s Dictionaries",
+      "url": "https://www.oxfordlearnersdictionaries.com/",
+      "category": "vocabulario",
+      "format": "dictionary",
+      "summary": {
+        "pt": "Dicionário para aprendizes com o nível de cada palavra, exemplos e áudio britânico e americano.",
+        "en": "A learner’s dictionary with the level of each word, examples and British and American audio."
+      },
+      "from": "A1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "merriam-webster-learners",
+      "name": "Merriam-Webster Learner’s Dictionary",
+      "url": "https://www.learnersdictionary.com/",
+      "category": "vocabulario",
+      "format": "dictionary",
+      "summary": {
+        "pt": "Definições em inglês simples, com foco no inglês americano.",
+        "en": "Definitions in plain English, focused on American English."
+      },
+      "from": "A2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
       "id": "business-english-pod",
       "name": "Business English Pod",
       "url": "https://www.businessenglishpod.com/",
@@ -1188,6 +1519,34 @@
       "summary": {
         "pt": "Conversas sobre economia e comportamento humano, com transcrição de cada episódio.",
         "en": "Conversations about economics and human behaviour, with a transcript of every episode."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "how-i-built-this",
+      "name": "How I Built This",
+      "url": "https://www.npr.org/podcasts/510313/how-i-built-this",
+      "category": "trabalho",
+      "format": "podcast",
+      "summary": {
+        "pt": "Fundadores de empresas contam como começaram, em entrevistas da rádio pública americana.",
+        "en": "Company founders tell how they got started, in interviews from American public radio."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "worklife",
+      "name": "WorkLife with Adam Grant",
+      "url": "https://www.ted.com/podcasts/worklife",
+      "category": "trabalho",
+      "format": "podcast",
+      "summary": {
+        "pt": "Um psicólogo organizacional fala sobre motivação, reuniões e cultura de trabalho.",
+        "en": "An organisational psychologist talks about motivation, meetings and workplace culture."
       },
       "from": "B2",
       "to": "C2",
@@ -1342,6 +1701,62 @@
       "summary": {
         "pt": "Dois jornalistas do New York Times comentam as notícias da semana em tecnologia e IA.",
         "en": "Two New York Times journalists discuss the week’s tech and AI news."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "fireship",
+      "name": "Fireship",
+      "url": "https://www.youtube.com/@Fireship",
+      "category": "tecnologia",
+      "format": "youtube",
+      "summary": {
+        "pt": "Vídeos de programação de cem segundos a dez minutos, com fala muito rápida e muitas piadas de desenvolvedor.",
+        "en": "Programming videos from a hundred seconds to ten minutes, with very fast speech and plenty of developer jokes."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "talk-python",
+      "name": "Talk Python To Me",
+      "url": "https://talkpython.fm/",
+      "category": "tecnologia",
+      "format": "podcast",
+      "summary": {
+        "pt": "Entrevistas sobre o ecossistema Python, de web a ciência de dados.",
+        "en": "Interviews about the Python ecosystem, from web to data science."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "cyberwire-daily",
+      "name": "CyberWire Daily",
+      "url": "https://thecyberwire.com/podcasts/daily-podcast",
+      "category": "tecnologia",
+      "format": "podcast",
+      "summary": {
+        "pt": "Resumo diário de notícias de segurança, curto e com fala clara de apresentador de rádio.",
+        "en": "A short daily roundup of security news, with the clear delivery of a radio host."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "lex-fridman",
+      "name": "Lex Fridman Podcast",
+      "url": "https://lexfridman.com/podcast/",
+      "category": "tecnologia",
+      "format": "podcast",
+      "summary": {
+        "pt": "Conversas longas sobre IA, ciência e tecnologia. O apresentador fala devagar, e todos os episódios têm transcrição.",
+        "en": "Long conversations on AI, science and technology. The host speaks slowly, and every episode has a transcript."
       },
       "from": "B2",
       "to": "C2",
