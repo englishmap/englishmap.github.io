@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="docs/brand/logo.webp" alt="englishmap" width="480">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/brand/symbol.webp" width="220">
+    <img src="docs/brand/logo.webp" alt="englishmap" width="480">
+  </picture>
 </p>
 
 <p align="center">

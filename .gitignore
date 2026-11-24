@@ -12,5 +12,6 @@ SPEC.local.md
 CLAUDE.md
 .claude/
 
-# High-resolution logo source (the versioned copy is docs/brand/logo.webp)
+# High-resolution logo sources (versioned copies live in docs/brand/)
 /Gemini_Generated_Image_*.jpg
+/2ade0862-*.webp

@@ -11,6 +11,7 @@ interface Props {
 
 const { title, description } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL(url('/og.png'), Astro.site);
 ---
 
 <!doctype html>
@@ -22,11 +23,22 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml" />
+    <link rel="apple-touch-icon" href={url('/apple-touch-icon.png')} />
     <meta name="theme-color" content="#fcfcfd" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#16181c" media="(prefers-color-scheme: dark)" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Logo do englishmap: um marcador de mapa com uma casa dentro"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <script is:inline>
       try {
         const t = localStorage.getItem('theme');
