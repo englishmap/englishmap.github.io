@@ -13,6 +13,7 @@ const t = UI[lang];
 const links: { key: RouteKey; label: string }[] = [
   { key: 'home', label: t.navResources },
   { key: 'guide', label: t.navGuide },
+  { key: 'abroad', label: t.navAbroad },
 ];
 // On a page without translations, the switcher points to the other language's home.
 const other = LANGS.filter((l) => l !== lang);
@@ -119,6 +120,12 @@ const other = LANGS.filter((l) => l !== lang);
   .langs a {
     text-decoration: none;
     color: var(--ink-2);
+    white-space: nowrap;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    row-gap: var(--space-2);
   }
 
   nav a:hover,
@@ -173,6 +180,9 @@ const other = LANGS.filter((l) => l !== lang);
       order: 3;
       flex-basis: 100%;
       margin: 0;
+    }
+    nav ul {
+      gap: var(--space-2) var(--space-4);
     }
   }
 </style>

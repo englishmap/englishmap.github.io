@@ -15,10 +15,11 @@ The site is available in Brazilian Portuguese (`/`) and English (`/en/`). It is 
 
 ## Features
 
-- **49 resources in 10 categories:** setting up your surroundings, listening, watching, reading, speaking, writing, pronunciation, vocabulary, guided study and level tests.
+- **91 resources in 13 categories:** setting up your surroundings, listening, watching, TV series, reading, speaking, writing, pronunciation, vocabulary, English for work, tech podcasts (programming, security and AI), guided study and level tests.
 - **What you need before clicking:** format, CEFR level range and whether it is free, freemium or paid.
 - **Filters** by level, cost and text, kept in the URL so a filtered view can be shared.
 - **An immersion guide:** why comprehensible input works, how to switch your devices and media to English, what to use at each stage, and a sample day with about two hours of English.
+- **Study abroad:** the four cheapest English-speaking destinations for a language course (the Philippines, Malta, South Africa and Ireland), with entry and work rules for Brazilian passport holders taken from official sources.
 - **Light and dark themes**, no third-party requests at runtime.
 
 ## How it works
@@ -43,8 +44,9 @@ data/catalog.json   Catalog: categories and resources
 src/schemas/        Catalog schema
 src/lib/            Pure logic: catalog, filters, i18n strings and routes, paths
 src/components/     UI components
-src/pages/          Routes: / and /en/ (resources), /como-montar/ and /en/guide/ (guide), 404
-docs/               Design brief, decisions (ADRs) and brand files
+src/pages/          Routes: / and /en/ (resources), /como-montar/ and /en/guide/ (guide),
+                    /intercambio/ and /en/study-abroad/ (study abroad), 404
+docs/               Design brief, decisions (ADRs) and brand files (docs/brand/README.md)
 ```
 
 ## Adding a resource

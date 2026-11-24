@@ -40,6 +40,19 @@
       }
     },
     {
+      "id": "series",
+      "headword": "binge",
+      "ipa": "/bɪndʒ/",
+      "title": {
+        "pt": "Séries em inglês",
+        "en": "TV series in English"
+      },
+      "summary": {
+        "pt": "Séries para ver com legenda em inglês, da mais lenta à mais rápida. O link leva à ficha no IMDb, onde dá para ver em qual streaming estão.",
+        "en": "Series to watch with English subtitles, from the slowest to the fastest. Each link goes to IMDb, where you can see which streaming service has it."
+      }
+    },
+    {
       "id": "ler",
       "headword": "read",
       "ipa": "/riːd/",
@@ -102,6 +115,32 @@
       "summary": {
         "pt": "Dicionários para aprendizes, com definição em inglês simples, e repetição espaçada para não esquecer.",
         "en": "Learner’s dictionaries that define words in plain English, and spaced repetition so you do not forget them."
+      }
+    },
+    {
+      "id": "trabalho",
+      "headword": "work",
+      "ipa": "/wɜːk/",
+      "title": {
+        "pt": "Inglês para o trabalho",
+        "en": "English for work"
+      },
+      "summary": {
+        "pt": "Podcasts sobre negócios, economia e carreira, com o vocabulário de reunião, entrevista e e-mail que aparece no dia a dia do trabalho.",
+        "en": "Podcasts on business, economics and careers, with the vocabulary of meetings, interviews and emails you meet at work."
+      }
+    },
+    {
+      "id": "tecnologia",
+      "headword": "hack",
+      "ipa": "/hæk/",
+      "title": {
+        "pt": "Tecnologia, programação, segurança e IA",
+        "en": "Tech, programming, security and AI"
+      },
+      "summary": {
+        "pt": "Podcasts em inglês da área de tecnologia. Você aprende o jargão do seu trabalho do jeito que ele é falado em reuniões, palestras e entrevistas.",
+        "en": "English-language tech podcasts. You learn the jargon of your field the way it is spoken in meetings, talks and interviews."
       }
     },
     {
@@ -287,6 +326,90 @@
       "cost": "free"
     },
     {
+      "id": "coffee-break-english",
+      "name": "Coffee Break English",
+      "url": "https://coffeebreaklanguages.com/coffeebreakenglish/",
+      "category": "ouvir",
+      "format": "podcast",
+      "summary": {
+        "pt": "Curso em formato de podcast, com um professor e um aluno conversando sobre o inglês de situações do dia a dia.",
+        "en": "A course in podcast form, with a teacher and a learner talking through the English of everyday situations."
+      },
+      "from": "A2",
+      "to": "B2",
+      "cost": "freemium"
+    },
+    {
+      "id": "eslpod",
+      "name": "ESLPod",
+      "url": "https://www.eslpod.com/",
+      "category": "ouvir",
+      "format": "podcast",
+      "summary": {
+        "pt": "Diálogos do cotidiano lidos devagar e depois explicados frase a frase. Um dos podcasts para aprendizes mais antigos.",
+        "en": "Everyday dialogues read slowly and then explained line by line. One of the oldest podcasts for learners."
+      },
+      "from": "A2",
+      "to": "B2",
+      "cost": "freemium"
+    },
+    {
+      "id": "real-english-conversations",
+      "name": "Real English Conversations",
+      "url": "https://realenglishconversations.com/",
+      "category": "ouvir",
+      "format": "podcast",
+      "summary": {
+        "pt": "Dois professores conversam em ritmo natural sobre temas comuns, com dicas de expressões que nativos usam.",
+        "en": "Two teachers chat at a natural pace about common topics, with tips on the expressions native speakers use."
+      },
+      "from": "B1",
+      "to": "C1",
+      "cost": "freemium"
+    },
+    {
+      "id": "thinking-in-english",
+      "name": "Thinking in English",
+      "url": "https://thinkinginenglish.blog/",
+      "category": "ouvir",
+      "format": "podcast",
+      "summary": {
+        "pt": "Episódios sobre atualidades e cultura, falados com clareza, com vocabulário e perguntas para pensar em inglês.",
+        "en": "Episodes on current affairs and culture, spoken clearly, with vocabulary and questions to make you think in English."
+      },
+      "from": "B1",
+      "to": "C1",
+      "cost": "free"
+    },
+    {
+      "id": "lingoclip",
+      "name": "LingoClip",
+      "url": "https://lingoclip.com/",
+      "category": "ouvir",
+      "format": "site",
+      "summary": {
+        "pt": "Antigo LyricsTraining: você assiste ao clipe de uma música e completa as palavras que faltam na letra.",
+        "en": "Formerly LyricsTraining: you watch a music video and fill in the missing words of the lyrics."
+      },
+      "from": "A1",
+      "to": "C1",
+      "cost": "free"
+    },
+    {
+      "id": "librivox",
+      "name": "LibriVox",
+      "url": "https://librivox.org/",
+      "category": "ouvir",
+      "format": "audiobooks",
+      "summary": {
+        "pt": "Audiolivros gratuitos de obras em domínio público, lidos por voluntários. Ouça enquanto lê o mesmo livro em texto.",
+        "en": "Free audiobooks of public domain works, read by volunteers. Listen while you read the same book in print."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
       "id": "peppa-pig",
       "name": "Peppa Pig Official",
       "url": "https://www.youtube.com/@PeppaPigOfficial",
@@ -369,6 +492,230 @@
       "from": "B2",
       "to": "C2",
       "cost": "free"
+    },
+    {
+      "id": "bbc-learning-english-youtube",
+      "name": "BBC Learning English no YouTube",
+      "url": "https://www.youtube.com/@bbclearningenglish",
+      "category": "assistir",
+      "format": "youtube",
+      "summary": {
+        "pt": "Vídeos curtos da BBC sobre gramática, vocabulário, pronúncia e notícias, com legenda em inglês.",
+        "en": "Short BBC videos on grammar, vocabulary, pronunciation and the news, with English subtitles."
+      },
+      "from": "A2",
+      "to": "C1",
+      "cost": "free"
+    },
+    {
+      "id": "speak-english-with-vanessa",
+      "name": "Speak English With Vanessa",
+      "url": "https://www.youtube.com/@SpeakEnglishWithVanessa",
+      "category": "assistir",
+      "format": "youtube",
+      "summary": {
+        "pt": "Uma professora americana fala devagar e com clareza sobre conversação e expressões do dia a dia.",
+        "en": "An American teacher speaks slowly and clearly about conversation and everyday expressions."
+      },
+      "from": "A2",
+      "to": "B2",
+      "cost": "free"
+    },
+    {
+      "id": "learn-english-with-tv-series",
+      "name": "Learn English With TV Series",
+      "url": "https://www.youtube.com/@LearnEnglishWithTVSeries",
+      "category": "assistir",
+      "format": "youtube",
+      "summary": {
+        "pt": "Trechos de séries e filmes conhecidos explicados fala a fala: gírias, expressões e pronúncia.",
+        "en": "Clips from well-known series and films explained line by line: slang, expressions and pronunciation."
+      },
+      "from": "B1",
+      "to": "C1",
+      "cost": "free"
+    },
+    {
+      "id": "ted-ed",
+      "name": "TED-Ed",
+      "url": "https://www.youtube.com/@TEDEd",
+      "category": "assistir",
+      "format": "youtube",
+      "summary": {
+        "pt": "Animações de cinco minutos sobre ciência, história e ideias, com narração clara e transcrição.",
+        "en": "Five-minute animations on science, history and ideas, with clear narration and a transcript."
+      },
+      "from": "B1",
+      "to": "C1",
+      "cost": "free"
+    },
+    {
+      "id": "vox",
+      "name": "Vox",
+      "url": "https://www.youtube.com/@Vox",
+      "category": "assistir",
+      "format": "youtube",
+      "summary": {
+        "pt": "Vídeos explicativos sobre política, cultura e design, com gráficos que ajudam a acompanhar.",
+        "en": "Explainer videos on politics, culture and design, with graphics that help you follow along."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "veritasium",
+      "name": "Veritasium",
+      "url": "https://www.youtube.com/@veritasium",
+      "category": "assistir",
+      "format": "youtube",
+      "summary": {
+        "pt": "Ciência e engenharia explicadas com experimentos. Bom para ouvir inglês técnico com contexto visual.",
+        "en": "Science and engineering explained through experiments. Good for hearing technical English with visual context."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "tom-scott",
+      "name": "Tom Scott",
+      "url": "https://www.youtube.com/@TomScottGo",
+      "category": "assistir",
+      "format": "youtube",
+      "summary": {
+        "pt": "Um britânico conta, em poucos minutos e sem cortes, a história de lugares e fatos curiosos. Fala rápida e precisa.",
+        "en": "A British presenter tells, in a few minutes and in one take, the story behind curious places and facts. Fast, precise speech."
+      },
+      "from": "C1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "bluey",
+      "name": "Bluey",
+      "url": "https://www.imdb.com/title/tt7678620/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "Desenho australiano com episódios de sete minutos, frases curtas e situações de família. Bom primeiro contato com sotaque australiano.",
+        "en": "An Australian cartoon with seven-minute episodes, short sentences and family situations. A gentle first contact with the Australian accent."
+      },
+      "from": "A1",
+      "to": "A2",
+      "cost": "paid"
+    },
+    {
+      "id": "friends",
+      "name": "Friends",
+      "url": "https://www.imdb.com/title/tt0108778/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "A comédia mais usada para aprender: diálogos do cotidiano, piadas que se repetem e inglês americano claro.",
+        "en": "The sitcom most used for learning: everyday dialogue, running jokes and clear American English."
+      },
+      "from": "B1",
+      "to": "B2",
+      "cost": "paid"
+    },
+    {
+      "id": "modern-family",
+      "name": "Modern Family",
+      "url": "https://www.imdb.com/title/tt1442437/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "Três famílias em episódios curtos, com conversas de casa, escola e trabalho em ritmo moderado.",
+        "en": "Three families in short episodes, with conversations at home, school and work at a moderate pace."
+      },
+      "from": "B1",
+      "to": "B2",
+      "cost": "paid"
+    },
+    {
+      "id": "brooklyn-nine-nine",
+      "name": "Brooklyn Nine-Nine",
+      "url": "https://www.imdb.com/title/tt2467372/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "Comédia numa delegacia de Nova York, com muita gíria e humor rápido.",
+        "en": "A comedy set in a New York police precinct, with plenty of slang and quick humour."
+      },
+      "from": "B2",
+      "to": "C1",
+      "cost": "paid"
+    },
+    {
+      "id": "the-office",
+      "name": "The Office",
+      "url": "https://www.imdb.com/title/tt0386676/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "O dia a dia de um escritório americano. Ótimo para o inglês de reunião, e-mail e conversa com colegas.",
+        "en": "Daily life in an American office. Great for the English of meetings, emails and small talk with colleagues."
+      },
+      "from": "B2",
+      "to": "C1",
+      "cost": "paid"
+    },
+    {
+      "id": "ted-lasso",
+      "name": "Ted Lasso",
+      "url": "https://www.imdb.com/title/tt10986410/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "Um técnico americano num clube inglês: dá para comparar o inglês americano e o britânico na mesma cena.",
+        "en": "An American coach at an English club: you can compare American and British English in the same scene."
+      },
+      "from": "B2",
+      "to": "C1",
+      "cost": "paid"
+    },
+    {
+      "id": "the-crown",
+      "name": "The Crown",
+      "url": "https://www.imdb.com/title/tt4786824/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "Drama histórico com inglês britânico formal e bem articulado, mais fácil de ouvir do que parece.",
+        "en": "A historical drama with formal, well-articulated British English, easier to follow than it looks."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "paid"
+    },
+    {
+      "id": "sherlock",
+      "name": "Sherlock",
+      "url": "https://www.imdb.com/title/tt1475582/",
+      "category": "series",
+      "format": "series",
+      "summary": {
+        "pt": "Diálogos britânicos muito rápidos e vocabulário amplo. Um bom teste para quem já está avançado.",
+        "en": "Very fast British dialogue and wide vocabulary. A good test once you are advanced."
+      },
+      "from": "C1",
+      "to": "C2",
+      "cost": "paid"
+    },
+    {
+      "id": "lingopie",
+      "name": "Lingopie",
+      "url": "https://lingopie.com/",
+      "category": "series",
+      "format": "app",
+      "summary": {
+        "pt": "Plataforma de séries e filmes com legenda interativa: clique numa palavra para ver a tradução e salvar.",
+        "en": "A streaming platform of series and films with interactive subtitles: click a word to see its translation and save it."
+      },
+      "from": "A2",
+      "to": "C1",
+      "cost": "paid"
     },
     {
       "id": "news-in-levels",
@@ -567,6 +914,34 @@
       "cost": "paid"
     },
     {
+      "id": "praktika",
+      "name": "Praktika",
+      "url": "https://praktika.ai/",
+      "category": "falar",
+      "format": "app",
+      "summary": {
+        "pt": "Conversa por voz com um tutor de IA que corrige pronúncia e gramática. Bom para perder a vergonha antes de falar com pessoas.",
+        "en": "Voice conversations with an AI tutor that corrects pronunciation and grammar. Good for getting over shyness before talking to people."
+      },
+      "from": "A1",
+      "to": "B2",
+      "cost": "freemium"
+    },
+    {
+      "id": "speak-app",
+      "name": "Speak",
+      "url": "https://www.speak.com/",
+      "category": "falar",
+      "format": "app",
+      "summary": {
+        "pt": "App de conversação com IA: você repete frases, responde perguntas em voz alta e recebe correções.",
+        "en": "An AI conversation app: you repeat phrases, answer questions out loud and get corrections."
+      },
+      "from": "A1",
+      "to": "B2",
+      "cost": "freemium"
+    },
+    {
       "id": "langcorrect",
       "name": "LangCorrect",
       "url": "https://langcorrect.com/",
@@ -621,6 +996,20 @@
       "from": "B1",
       "to": "C2",
       "cost": "freemium"
+    },
+    {
+      "id": "r-englishlearning",
+      "name": "r/EnglishLearning",
+      "url": "https://www.reddit.com/r/EnglishLearning/",
+      "category": "escrever",
+      "format": "community",
+      "summary": {
+        "pt": "Comunidade grande para tirar dúvidas de gramática, vocabulário e uso, respondidas por nativos e professores.",
+        "en": "A large community for questions on grammar, vocabulary and usage, answered by native speakers and teachers."
+      },
+      "from": "A2",
+      "to": "C2",
+      "cost": "free"
     },
     {
       "id": "youglish",
@@ -735,6 +1124,230 @@
       "cost": "freemium"
     },
     {
+      "id": "clozemaster",
+      "name": "Clozemaster",
+      "url": "https://www.clozemaster.com/",
+      "category": "vocabulario",
+      "format": "site",
+      "summary": {
+        "pt": "Frases reais com uma palavra faltando para você completar. Ensina vocabulário sempre dentro de contexto.",
+        "en": "Real sentences with one word missing for you to fill in. Teaches vocabulary always in context."
+      },
+      "from": "B1",
+      "to": "C1",
+      "cost": "freemium"
+    },
+    {
+      "id": "business-english-pod",
+      "name": "Business English Pod",
+      "url": "https://www.businessenglishpod.com/",
+      "category": "trabalho",
+      "format": "podcast",
+      "summary": {
+        "pt": "Diálogos de reuniões, negociações, apresentações e entrevistas, explicados depois por professores.",
+        "en": "Dialogues from meetings, negotiations, presentations and interviews, then explained by teachers."
+      },
+      "from": "B1",
+      "to": "C1",
+      "cost": "freemium"
+    },
+    {
+      "id": "hbr-ideacast",
+      "name": "HBR IdeaCast",
+      "url": "https://hbr.org/podcasts/ideacast",
+      "category": "trabalho",
+      "format": "podcast",
+      "summary": {
+        "pt": "Entrevistas da Harvard Business Review sobre gestão, liderança e carreira.",
+        "en": "Harvard Business Review interviews on management, leadership and careers."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "planet-money",
+      "name": "Planet Money",
+      "url": "https://www.npr.org/podcasts/510289/planet-money",
+      "category": "trabalho",
+      "format": "podcast",
+      "summary": {
+        "pt": "Economia explicada com histórias curtas e bem produzidas, pela rádio pública americana.",
+        "en": "Economics explained through short, well-produced stories, from American public radio."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "freakonomics",
+      "name": "Freakonomics Radio",
+      "url": "https://freakonomics.com/",
+      "category": "trabalho",
+      "format": "podcast",
+      "summary": {
+        "pt": "Conversas sobre economia e comportamento humano, com transcrição de cada episódio.",
+        "en": "Conversations about economics and human behaviour, with a transcript of every episode."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "darknet-diaries",
+      "name": "Darknet Diaries",
+      "url": "https://darknetdiaries.com/",
+      "category": "tecnologia",
+      "format": "podcast",
+      "summary": {
+        "pt": "Histórias reais de invasões, golpes e espionagem digital, narradas como um thriller. Tem transcrição.",
+        "en": "True stories of hacks, scams and digital espionage, told like a thriller. Has transcripts."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "smashing-security",
+      "name": "Smashing Security",
+      "url": "https://www.smashingsecurity.com/",
+      "category": "tecnologia",
+      "format": "podcast",
+      "summary": {
+        "pt": "Notícias de segurança comentadas com humor por apresentadores britânicos.",
+        "en": "Security news discussed with humour by British hosts."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "risky-business",
+      "name": "Risky Business",
+      "url": "https://risky.biz/",
+      "category": "tecnologia",
+      "format": "podcast",
+      "summary": {
+        "pt": "Notícias e análise de segurança da informação para profissionais da área. Ritmo rápido e jargão técnico.",
+        "en": "Information security news and analysis for professionals. Fast pace and technical jargon."
+      },
+      "from": "C1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "security-now",
+      "name": "Security Now",
+      "url": "https://twit.tv/shows/security-now",
+      "category": "tecnologia",
+      "format": "podcast",
+      "summary": {
+        "pt": "Episódios longos que explicam vulnerabilidades e criptografia em detalhe.",
+        "en": "Long episodes that explain vulnerabilities and cryptography in detail."
+      },
+      "from": "C1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "syntax",
+      "name": "Syntax",
+      "url": "https://syntax.fm/",
+      "category": "tecnologia",
+      "format": "podcast",
+      "summary": {
+        "pt": "Desenvolvimento web com dois apresentadores descontraídos: JavaScript, CSS, ferramentas e carreira.",
+        "en": "Web development with two relaxed hosts: JavaScript, CSS, tooling and careers."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "changelog",
+      "name": "The Changelog",
+      "url": "https://changelog.com/podcast",
+      "category": "tecnologia",
+      "format": "podcast",
+      "summary": {
+        "pt": "Entrevistas com quem cria software e projetos open source.",
+        "en": "Interviews with the people who build software and open source projects."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "corecursive",
+      "name": "CoRecursive",
+      "url": "https://corecursive.com/",
+      "category": "tecnologia",
+      "format": "podcast",
+      "summary": {
+        "pt": "Histórias por trás de softwares e de quem os escreveu, contadas em formato narrativo.",
+        "en": "The stories behind software and the people who wrote it, told as narratives."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "software-engineering-daily",
+      "name": "Software Engineering Daily",
+      "url": "https://softwareengineeringdaily.com/",
+      "category": "tecnologia",
+      "format": "podcast",
+      "summary": {
+        "pt": "Entrevistas técnicas sobre arquitetura, infraestrutura e dados, com engenheiros de grandes empresas.",
+        "en": "Technical interviews on architecture, infrastructure and data with engineers from large companies."
+      },
+      "from": "C1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "practical-ai",
+      "name": "Practical AI",
+      "url": "https://practicalai.fm/",
+      "category": "tecnologia",
+      "format": "podcast",
+      "summary": {
+        "pt": "Inteligência artificial aplicada, explicada sem exagero, para quem trabalha com ela.",
+        "en": "Applied artificial intelligence, explained without hype, for people who work with it."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "url": "https://www.latent.space/podcast",
+      "category": "tecnologia",
+      "format": "podcast",
+      "summary": {
+        "pt": "Conversas técnicas sobre engenharia de IA e modelos de linguagem com quem constrói essas ferramentas.",
+        "en": "Technical conversations on AI engineering and language models with the people building these tools."
+      },
+      "from": "C1",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
+      "id": "hard-fork",
+      "name": "Hard Fork",
+      "url": "https://www.nytimes.com/column/hard-fork",
+      "category": "tecnologia",
+      "format": "podcast",
+      "summary": {
+        "pt": "Dois jornalistas do New York Times comentam as notícias da semana em tecnologia e IA.",
+        "en": "Two New York Times journalists discuss the week’s tech and AI news."
+      },
+      "from": "B2",
+      "to": "C2",
+      "cost": "free"
+    },
+    {
       "id": "bbc-learning-english",
       "name": "BBC Learning English",
       "url": "https://www.bbc.co.uk/learningenglish/",
@@ -788,6 +1401,20 @@
       },
       "from": "A1",
       "to": "B1",
+      "cost": "freemium"
+    },
+    {
+      "id": "busuu",
+      "name": "Busuu",
+      "url": "https://www.busuu.com/",
+      "category": "cursos",
+      "format": "app",
+      "summary": {
+        "pt": "Lições curtas por nível, com exercícios de escrita e fala corrigidos por outros usuários.",
+        "en": "Short lessons by level, with writing and speaking exercises corrected by other users."
+      },
+      "from": "A1",
+      "to": "B2",
       "cost": "freemium"
     },
     {

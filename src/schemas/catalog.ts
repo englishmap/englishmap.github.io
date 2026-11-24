@@ -20,6 +20,8 @@ export const FORMATS = [
   'community',
   'dictionary',
   'test',
+  'series',
+  'audiobooks',
 ] as const;
 
 const localized = (min: number, max: number) =>

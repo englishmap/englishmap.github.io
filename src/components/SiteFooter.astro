@@ -28,6 +28,9 @@ const t = UI[lang];
         <li>
           <a href={url(ROUTES.guide[lang])}>{t.navGuide}</a>
         </li>
+        <li>
+          <a href={url(ROUTES.abroad[lang])}>{t.navAbroad}</a>
+        </li>
         {LANGS.filter((l) => l !== lang).map((l) => (
           <li>
             <a href={url(ROUTES.home[l])} hreflang={l} lang={l}>

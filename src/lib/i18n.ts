@@ -13,6 +13,7 @@ export const LANG_NAME: Record<Lang, string> = { pt: 'Português', en: 'English'
 export const ROUTES = {
   home: { pt: '/', en: '/en/' },
   guide: { pt: '/como-montar/', en: '/en/guide/' },
+  abroad: { pt: '/intercambio/', en: '/en/study-abroad/' },
 } as const satisfies Record<string, Record<Lang, string>>;
 
 export type RouteKey = keyof typeof ROUTES;
@@ -44,6 +45,8 @@ export const FORMAT_LABEL: Record<Lang, Record<Format, string>> = {
     community: 'Comunidade',
     dictionary: 'Dicionário',
     test: 'Teste',
+    series: 'Série',
+    audiobooks: 'Audiolivros',
   },
   en: {
     extension: 'Extension',
@@ -61,6 +64,8 @@ export const FORMAT_LABEL: Record<Lang, Record<Format, string>> = {
     community: 'Community',
     dictionary: 'Dictionary',
     test: 'Test',
+    series: 'Series',
+    audiobooks: 'Audiobooks',
   },
 };
 
@@ -69,7 +74,8 @@ export const UI = {
     skip: 'Pular para o conteúdo',
     navLabel: 'Principal',
     navResources: 'Recursos',
-    navGuide: 'Como montar a imersão',
+    navGuide: 'Guia de imersão',
+    navAbroad: 'Intercâmbio',
     theme: 'Alternar tema claro e escuro',
     langSwitch: 'Idioma',
     homeTitle: 'englishmap: imersão em inglês sem sair de casa',
@@ -104,7 +110,8 @@ export const UI = {
     skip: 'Skip to content',
     navLabel: 'Main',
     navResources: 'Resources',
-    navGuide: 'How to build the immersion',
+    navGuide: 'Immersion guide',
+    navAbroad: 'Study abroad',
     theme: 'Switch between light and dark theme',
     langSwitch: 'Language',
     homeTitle: 'englishmap: English immersion without leaving home',

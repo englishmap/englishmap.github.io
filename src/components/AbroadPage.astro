@@ -1,0 +1,204 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { CHECKED_ON, DESTINATIONS, ESTIMATE_SOURCE } from '../lib/destinations';
+import { ROUTES } from '../lib/i18n';
+import { url } from '../lib/paths';
+import type { Lang } from '../schemas/catalog';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const checked = new Intl.DateTimeFormat(lang === 'pt' ? 'pt-BR' : 'en-US', {
+  dateStyle: 'long',
+  timeZone: 'UTC',
+}).format(new Date(CHECKED_ON));
+
+const T = {
+  pt: {
+    title: 'Intercâmbio de inglês mais barato | englishmap',
+    description:
+      'Filipinas, Malta, África do Sul e Irlanda: custo, regras de entrada para brasileiros e se dá para trabalhar durante o curso.',
+    h1: 'Intercâmbio de inglês mais barato',
+    lead: 'A imersão em casa é a base. Quando der para viajar, estes são os destinos de língua inglesa com menor custo para um curso de idioma, do mais barato ao mais caro.',
+    advice:
+      'Vale chegar com pelo menos o nível B1: assim você aproveita a rua, e não só a sala de aula. As regras de entrada abaixo são para passaporte brasileiro.',
+    warn: (d: string) =>
+      `Regras de imigração mudam. Conferido em ${d} nas páginas oficiais de cada país; confirme lá antes de comprar passagem ou pagar uma escola. Os preços são estimativas de terceiros, e não cotações.`,
+    cost: 'Custo',
+    entry: 'Entrada e estudo',
+    work: 'Trabalhar durante o curso',
+    english: 'Inglês do país',
+    official: 'Fontes oficiais',
+    estimate: 'Estimativas de preço',
+    back: 'Ver os recursos para estudar de casa',
+  },
+  en: {
+    title: 'Cheaper English study abroad | englishmap',
+    description:
+      'The Philippines, Malta, South Africa and Ireland: cost, entry rules for Brazilian passport holders and whether you can work during the course.',
+    h1: 'Cheaper places to study English abroad',
+    lead: 'Immersion at home is the foundation. When you can travel, these are the English-speaking destinations with the lowest cost for a language course, from cheapest to most expensive.',
+    advice:
+      'It pays to arrive at B1 or above, so you learn from the street and not only the classroom. The entry rules below are for Brazilian passport holders; check the rules for yours.',
+    warn: (d: string) =>
+      `Immigration rules change. Checked on ${d} against each country’s official pages; confirm there before buying a ticket or paying a school. Prices are third-party estimates, not quotes.`,
+    cost: 'Cost',
+    entry: 'Entry and study',
+    work: 'Working during the course',
+    english: 'Local English',
+    official: 'Official sources',
+    estimate: 'Price estimates',
+    back: 'See the resources for studying at home',
+  },
+}[lang];
+---
+
+<BaseLayout title={T.title} description={T.description} lang={lang} route="abroad">
+  <article class="wrap prose">
+    <h1>{T.h1}</h1>
+    <p class="lead">{T.lead}</p>
+    <p>{T.advice}</p>
+    <p class="warn" role="note">
+      {T.warn(checked)}
+    </p>
+
+    {DESTINATIONS.map((d) => (
+      <section class="destination" id={d.id} aria-labelledby={`h-${d.id}`}>
+        <h2 id={`h-${d.id}`}>{d.name[lang]}</h2>
+        <dl>
+          <div>
+            <dt>{T.cost}</dt>
+            <dd>{d.cost[lang]}</dd>
+          </div>
+          <div>
+            <dt>{T.entry}</dt>
+            <dd>{d.entry[lang]}</dd>
+          </div>
+          <div>
+            <dt>{T.work}</dt>
+            <dd>{d.work[lang]}</dd>
+          </div>
+          <div>
+            <dt>{T.english}</dt>
+            <dd>{d.english[lang]}</dd>
+          </div>
+          <div>
+            <dt>{T.official}</dt>
+            <dd>
+              <ul class="links">
+                {d.official.map((o) => (
+                  <li>
+                    <a href={o.href}>{o.label}</a>
+                  </li>
+                ))}
+              </ul>
+            </dd>
+          </div>
+        </dl>
+      </section>
+    ))}
+
+    <p class="source">
+      {T.estimate}: <a href={ESTIMATE_SOURCE.href}>{ESTIMATE_SOURCE.label}</a>.
+    </p>
+    <p class="back">
+      <a href={url(ROUTES.home[lang])}>{T.back}</a>
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .prose {
+    max-width: calc(var(--measure) + 2 * var(--space-6));
+    padding-block: var(--space-7) 0;
+    font-size: var(--type-prose);
+    line-height: 1.65;
+  }
+
+  h1 {
+    font-family: var(--font-entry);
+    font-weight: var(--weight-entry);
+    font-size: var(--type-h1);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .lead {
+    margin-top: var(--space-5);
+    font-size: var(--type-h3);
+    line-height: 1.5;
+    color: var(--ink-2);
+  }
+
+  p + p {
+    margin-top: var(--space-4);
+  }
+
+  .warn {
+    padding: var(--space-3) var(--space-4);
+    background: var(--wash);
+    border-radius: var(--radius-control);
+    font-size: var(--type-data);
+  }
+
+  .destination {
+    margin-top: var(--space-7);
+  }
+
+  h2 {
+    margin-bottom: var(--space-3);
+    font-family: var(--font-entry);
+    font-weight: var(--weight-entry);
+    font-size: var(--type-h2);
+    line-height: 1.2;
+  }
+
+  dl {
+    margin: 0;
+    border-top: 1px solid var(--rule-strong);
+  }
+
+  dl > div {
+    display: grid;
+    gap: var(--space-1);
+    padding-block: var(--space-3);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  dt {
+    font-size: var(--type-data);
+    font-weight: var(--weight-strong);
+  }
+
+  dd {
+    margin: 0;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  @media (min-width: 40rem) {
+    dl > div {
+      grid-template-columns: 12rem 1fr;
+      gap: var(--space-4);
+    }
+  }
+
+  .source {
+    margin-top: var(--space-6);
+    font-size: var(--type-data);
+    color: var(--ink-2);
+  }
+
+  .back {
+    margin-top: var(--space-6);
+  }
+</style>
