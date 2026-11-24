@@ -54,3 +54,9 @@ docs/               Design brief, decisions (ADRs) and brand files (docs/brand/R
 Add an object to `data/catalog.json` with `id`, `name`, `url` (https), `category`, `format` (one of the keys in `src/schemas/catalog.ts`), `summary` with `pt` and `en` texts (up to 200 characters each), `from` and `to` (CEFR levels) and `cost` (`free`, `freemium` or `paid`), then run `pnpm check`.
 
 A resource gets listed if it is useful to someone studying alone at home, it is online, and its level and cost have been checked on its own site. Sponsored entries are not accepted.
+
+## License
+
+- Code: [MIT](LICENSE).
+- Content (the catalog, the guide and study abroad texts, and the interface copy): [CC BY 4.0](LICENSE-CONTENT). You can reuse it with credit to englishmap.
+- The englishmap logo and symbol are the project's marks and are not covered by either license. Names and logos of the listed resources belong to their owners.
